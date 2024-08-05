@@ -24,7 +24,7 @@ public:
 
     //virtual ~Thread(){ delete myhandle;}
 
-    thread_t getHandle()const{ return myhandle; }
+
 
 
 

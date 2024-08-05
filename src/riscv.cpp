@@ -5,7 +5,7 @@
 #include "../h/riscv.hpp"
 #include "../lib/console.h"
 #include "../h/_thread.hpp"
-#include "../h/print.hpp"
+#include "../test/printing.hpp"
 
 
 void Riscv::popSppSpie()
@@ -48,6 +48,9 @@ void Riscv::interruptRoutineHandler(){
             case 0x13:
                 _thread::thread_dispatch();
                 break;
+            case 0x20:{
+                __getc();
+            }
             default:
                 break;
 
@@ -64,11 +67,11 @@ void Riscv::interruptRoutineHandler(){
     }
     else{
         printString("\nPc greske: ");
-        printInteger(r_sepc());//cuva adresu na kooju se vracam posle prekidne rutine
+        printInt(r_sepc());//cuva adresu na kooju se vracam posle prekidne rutine
         printString("\nStVal greske: ");
-        printInteger(r_stval());
+        printInt(r_stval());
         printString("\nRazlog greske scause: ");
-        printInteger(scause);
+        printInt(scause);
         switch(scause) {
             case 2:
                 printString(" Nelegelna instrukcija");

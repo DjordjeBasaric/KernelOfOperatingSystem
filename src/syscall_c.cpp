@@ -5,6 +5,7 @@
 
 #include "../lib/hw.h"
 #include "../h/_thread.hpp"
+#include "../lib/console.h"
 
 int thread_create(thread_t* handle, void(*start_routine)(void*), void* arg){
     uint64 const fcode = 0x11;
@@ -27,4 +28,15 @@ void thread_exit(){
     uint64 const fcode = 0x12;
     __asm__ volatile("mv a0, %0" : : "r"(fcode));
     __asm__ volatile("ecall");
+    //dodati i ovde promenljivu
+}
+
+void getc(){
+    uint64 const fcode = 0x20;
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+}
+
+void putc(char c){
+    __putc(c);
 }
