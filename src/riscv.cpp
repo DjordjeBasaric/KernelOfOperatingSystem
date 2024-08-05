@@ -10,8 +10,9 @@
 
 void Riscv::popSppSpie()
 {
-    __asm__ volatile ("csrw sepc, ra");
-    __asm__ volatile ("sret");
+    __asm__ volatile ("csrw sepc, ra"); // zato ovde upisujem da nas vrati tamo odakle je i ova funkcija bila i pozvana i zbog toga ova funckija nije inline
+    __asm__ volatile ("sret"); //ovo sret ce vratiti tamo gde je sepc rekao, i to nam ne odgovara
+
 }
 
 void Riscv::interruptRoutineHandler(){
@@ -45,7 +46,7 @@ void Riscv::interruptRoutineHandler(){
                 break;
                 }
             case 0x13:
-                _thread::yield();
+                _thread::thread_dispatch();
                 break;
             default:
                 break;

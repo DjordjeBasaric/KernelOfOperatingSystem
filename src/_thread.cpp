@@ -8,11 +8,9 @@
 _thread* _thread::running = nullptr;
 
 void _thread::yield(){
-    Riscv::pushRegisters();
-
-    _thread::thread_dispatch();
-
-    Riscv::popRegisters(); //ovde vraca sve ostale registre, a u okviru dispatch sam stavio ra i sp
+    uint64 fcode = 0x13;
+    asm volatile("mv a0, %0" : : "r" (fcode));  //a0 <- 13
+    asm volatile("ecall");
 }
 
 int _thread::create_thread(thread_t* handle, Body body, void* arg, void* stack_space){
@@ -34,14 +32,14 @@ void _thread::thread_dispatch(){
 
 int _thread::thread_exit() {
     _thread::running->setFinished(true);
-    yield();
+    _thread::yield();
     return 0;
 }
 
 void _thread::threadWrapper() {
-
+    Riscv::popSppSpie();
     running->body(running->arg);
     running->setFinished(true);//kada se sve zavrsi postavi da je kraj
-
+    _thread::yield();
 }
 

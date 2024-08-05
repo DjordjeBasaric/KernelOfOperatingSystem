@@ -58,7 +58,7 @@ void wrapper(void* arg){
 int main()
 {
     Riscv::w_stvec((uint64) &Riscv::interruptRoutine);    //upisuje adresu prekidne rutine
-
+    //Riscv: :ms_sstatus (Riscv:: SSTATUS_SIE);
     thread_t thread1;
     //idle nit(nit koja nema fju koja treba da izvrsava)
     thread_create(&thread1, nullptr, nullptr);

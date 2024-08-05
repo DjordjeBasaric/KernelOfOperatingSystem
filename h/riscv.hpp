@@ -13,11 +13,18 @@ class Riscv
 {
 public:
 
+    // pop status.spp and sstatus.spie bits
+    static void popSppSpie();
+    //implementaciju ove metode stavljam u cpp zato sto je vazno da ova staticka metoda
+    //bude ne inline, da bi se ovaj kod pozvao i da bi se promenio ra registar
+    //bitno je da znamo odakle se desio poziv
+    //jedini nacin da promenimo rezim privilegije je sa funkcijama koje se vracaju iz prekidne rutine
+    //pomocu sret, konekts novonapravljene niti nece ici preko normalne prekidne rutine vec ce ici preko
+    //threadWrapera i u okviru njegove funckije treba izaci iz prekidne rutine
+    //sret ce se vratiti tamo gde je sepc rekao
+
     //preko name manlinga uazi se u definiciju koja je napisana u fajlu preko asemblera
     static void interruptRoutine();
-
-    // pop sstatus.spp and sstatus.spie bits (has to be a non inline function)
-    static void popSppSpie();
 
     // push x3..x31 registers onto stack
     static void pushRegisters();
