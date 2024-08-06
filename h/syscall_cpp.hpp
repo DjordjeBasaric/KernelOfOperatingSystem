@@ -7,34 +7,41 @@
 
 #include "syscall_c.hpp"
 
+
 //void* ::operator new(size_t);
 //void ::operator delete(void*);
 
 class Thread {
 
 public:
-    Thread(void (*body)(void*), void* arg);
-    virtual ~Thread(); //virtual ~Thread(){ thread_exit();}
+    Thread(void (*body)(void*), void* arg):body(body), arg(arg){}
+    virtual ~Thread() { thread_exit();}
 
-    int start();
+    int start(){
+        if (body == nullptr){
+            thread_create(&myhandle, &threadWrapper,this);
+        }
+        else {
+            thread_create(&myhandle, body,arg);
+        }
+        return 0;
+    }
 
-    static void dispatch();
+    static void dispatch() {thread_dispatch();}
     static int sleep(time_t);
 
-
-    //virtual ~Thread(){ delete myhandle;}
-
-
-
-
-
 protected:
-    Thread();
+    Thread(){};
     virtual void run(){}
 
 private:
+    static void threadWrapper(void* p){
+        Thread* thr = (Thread*)p;
+        if (thr) thr->run();
+    }
+
     thread_t myhandle;  //rucka do thread objekta
-    void (*body)(void*);
+    void (*body)(void*) = nullptr;
     void* arg;
 
 };
@@ -42,16 +49,12 @@ private:
 
 class Semaphore{
 public:
-    Semaphore(unsigned init=1){
-        sem_open(&myHandle,init);
-    }
+    Semaphore(unsigned init=1);
+    virtual ~Semaphore();
 
-    virtual ~Semaphore(){ sem_close(myHandle);}
-
-    int wait(){ return sem_wait(myHandle);}
-
-    int signal(){ return sem_signal(myHandle);}
-
+    int wait();
+    int signal();
+    int tryWait();
 
 private:
     sem_t myHandle;

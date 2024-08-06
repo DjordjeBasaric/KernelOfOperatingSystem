@@ -32,6 +32,7 @@ void _thread::thread_dispatch(){
 
 int _thread::thread_exit() {
     _thread::running->setFinished(true);
+    delete _thread::running;
     _thread::yield();
     return 0;
 }

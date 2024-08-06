@@ -1,0 +1,66 @@
+GAS LISTING /tmp/cceSCbMg.s 			page 1
+
+
+   1              		.file	"syscall_cpp.cpp"
+   2              		.option nopic
+   3              		.option norelax
+   4              		.attribute arch, "rv64i2p0_m2p0_a2p0"
+   5              		.attribute unaligned_access, 0
+   6              		.attribute stack_align, 16
+   7              		.text
+   8              	.Ltext0:
+   9              	.Letext0:
+  10              		.file 1 "src/../h/../lib/hw.h"
+  11              		.file 2 "src/../h/syscall_c.hpp"
+  12              		.file 3 "src/../h/syscall_cpp.hpp"
+GAS LISTING /tmp/cceSCbMg.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 syscall_cpp.cpp
+     /tmp/cceSCbMg.s:328    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/cceSCbMg.s:807    .debug_str:000000000000004e .LASF26
+     /tmp/cceSCbMg.s:801    .debug_str:0000000000000016 .LASF27
+     /tmp/cceSCbMg.s:867    .debug_str:00000000000002b3 .LASF28
+     /tmp/cceSCbMg.s:795    .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/cceSCbMg.s:849    .debug_str:0000000000000244 .LASF0
+     /tmp/cceSCbMg.s:837    .debug_str:00000000000001f6 .LASF1
+     /tmp/cceSCbMg.s:829    .debug_str:00000000000001b1 .LASF2
+     /tmp/cceSCbMg.s:811    .debug_str:0000000000000120 .LASF4
+     /tmp/cceSCbMg.s:835    .debug_str:00000000000001e4 .LASF3
+     /tmp/cceSCbMg.s:803    .debug_str:000000000000002a .LASF5
+     /tmp/cceSCbMg.s:855    .debug_str:0000000000000265 .LASF6
+     /tmp/cceSCbMg.s:875    .debug_str:00000000000002fd .LASF7
+     /tmp/cceSCbMg.s:823    .debug_str:0000000000000188 .LASF8
+     /tmp/cceSCbMg.s:857    .debug_str:000000000000026c .LASF9
+     /tmp/cceSCbMg.s:809    .debug_str:0000000000000112 .LASF10
+     /tmp/cceSCbMg.s:877    .debug_str:0000000000000310 .LASF11
+     /tmp/cceSCbMg.s:825    .debug_str:000000000000019b .LASF12
+     /tmp/cceSCbMg.s:871    .debug_str:00000000000002e7 .LASF13
+     /tmp/cceSCbMg.s:863    .debug_str:000000000000029b .LASF14
+     /tmp/cceSCbMg.s:839    .debug_str:0000000000000209 .LASF15
+     /tmp/cceSCbMg.s:817    .debug_str:000000000000014a .LASF16
+     /tmp/cceSCbMg.s:859    .debug_str:000000000000027c .LASF17
+     /tmp/cceSCbMg.s:865    .debug_str:00000000000002ab .LASF29
+     /tmp/cceSCbMg.s:861    .debug_str:0000000000000292 .LASF18
+     /tmp/cceSCbMg.s:827    .debug_str:00000000000001aa .LASF19
+     /tmp/cceSCbMg.s:797    .debug_str:0000000000000000 .LASF30
+     /tmp/cceSCbMg.s:819    .debug_str:0000000000000160 .LASF21
+     /tmp/cceSCbMg.s:841    .debug_str:0000000000000215 .LASF31
+     /tmp/cceSCbMg.s:847    .debug_str:0000000000000235 .LASF32
+     /tmp/cceSCbMg.s:851    .debug_str:0000000000000251 .LASF33
+     /tmp/cceSCbMg.s:815    .debug_str:0000000000000137 .LASF34
+     /tmp/cceSCbMg.s:799    .debug_str:000000000000000d .LASF35
+     /tmp/cceSCbMg.s:831    .debug_str:00000000000001bf .LASF36
+     /tmp/cceSCbMg.s:873    .debug_str:00000000000002f7 .LASF20
+     /tmp/cceSCbMg.s:845    .debug_str:0000000000000222 .LASF22
+     /tmp/cceSCbMg.s:833    .debug_str:00000000000001d5 .LASF23
+     /tmp/cceSCbMg.s:821    .debug_str:0000000000000177 .LASF37
+     /tmp/cceSCbMg.s:853    .debug_str:0000000000000257 .LASF38
+     /tmp/cceSCbMg.s:805    .debug_str:0000000000000031 .LASF39
+     /tmp/cceSCbMg.s:869    .debug_str:00000000000002de .LASF24
+     /tmp/cceSCbMg.s:843    .debug_str:000000000000021d .LASF25
+     /tmp/cceSCbMg.s:813    .debug_str:0000000000000127 .LASF40
+     /tmp/cceSCbMg.s:14     .debug_info:0000000000000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS

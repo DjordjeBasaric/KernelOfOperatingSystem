@@ -1,4 +1,4 @@
-GAS LISTING /tmp/cct89ukB.s 			page 1
+GAS LISTING /tmp/ccSyd2t1.s 			page 1
 
 
    1              		.file	"Threads_C_API_test.cpp"
@@ -58,7 +58,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
   41              		.loc 1 15 5 is_stmt 1
   42              		.loc 1 15 21 is_stmt 0
   43 0030 1385F4FF 		addi	a0,s1,-1
-GAS LISTING /tmp/cct89ukB.s 			page 2
+GAS LISTING /tmp/ccSyd2t1.s 			page 2
 
 
   44 0034 97000000 		call	_ZL9fibonaccim
@@ -118,7 +118,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
   89      7463680A 
   89      00
   90 001d 000000   		.align	3
-GAS LISTING /tmp/cct89ukB.s 			page 3
+GAS LISTING /tmp/ccSyd2t1.s 			page 3
 
 
   91              	.LC3:
@@ -178,7 +178,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
   56:test/Threads_C_API_test.cpp ****     printString("C: t1="); printInt(t1); printString("\n");
   57:test/Threads_C_API_test.cpp **** 
   58:test/Threads_C_API_test.cpp ****     uint64 result = fibonacci(12);
-GAS LISTING /tmp/cct89ukB.s 			page 4
+GAS LISTING /tmp/ccSyd2t1.s 			page 4
 
 
   59:test/Threads_C_API_test.cpp ****     printString("C: fibonaci="); printInt(result); printString("\n");
@@ -238,7 +238,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  137 00b8 17050000 		lla	a0,.LC1
  137      13050500 
  138 00c0 97000000 		call	_Z11printStringPKc
-GAS LISTING /tmp/cct89ukB.s 			page 5
+GAS LISTING /tmp/ccSyd2t1.s 			page 5
 
 
  138      E7800000 
@@ -298,7 +298,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  176              	.LVL19:
  177 010c 97000000 		call	_Z11printStringPKc
  177      E7800000 
-GAS LISTING /tmp/cct89ukB.s 			page 6
+GAS LISTING /tmp/ccSyd2t1.s 			page 6
 
 
  178              	.LVL20:
@@ -358,7 +358,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  218 0178 9307F000 		li	a5,15
  219 017c E3F097FC 		bleu	s1,a5,.L14
   85:test/Threads_C_API_test.cpp ****     }
-GAS LISTING /tmp/cct89ukB.s 			page 7
+GAS LISTING /tmp/ccSyd2t1.s 			page 7
 
 
   86:test/Threads_C_API_test.cpp **** 
@@ -418,7 +418,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  261 005f 00       		.align	3
  262              	.LC8:
  263 0060 433A2066 		.string	"C: fibonaci="
-GAS LISTING /tmp/cct89ukB.s 			page 8
+GAS LISTING /tmp/ccSyd2t1.s 			page 8
 
 
  263      69626F6E 
@@ -478,7 +478,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  304 01f8 97000000 		call	_Z8printIntiii
  304      E7800000 
  305              	.LVL36:
-GAS LISTING /tmp/cct89ukB.s 			page 9
+GAS LISTING /tmp/ccSyd2t1.s 			page 9
 
 
   46:test/Threads_C_API_test.cpp ****     }
@@ -538,7 +538,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  341              	# 54 "test/Threads_C_API_test.cpp" 1
  342              		mv s2, t1
  343              	# 0 "" 2
-GAS LISTING /tmp/cct89ukB.s 			page 10
+GAS LISTING /tmp/ccSyd2t1.s 			page 10
 
 
  344              	.LVL42:
@@ -598,7 +598,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  378 0294 13060000 		li	a2,0
  379 0298 9305A000 		li	a1,10
  380 029c 1B050900 		sext.w	a0,s2
-GAS LISTING /tmp/cct89ukB.s 			page 11
+GAS LISTING /tmp/ccSyd2t1.s 			page 11
 
 
  381 02a0 97000000 		call	_Z8printIntiii
@@ -658,7 +658,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  416 02fc E3F097FC 		bleu	s1,a5,.L22
   65:test/Threads_C_API_test.cpp ****     finishedC = true;
  417              		.loc 1 65 5
-GAS LISTING /tmp/cct89ukB.s 			page 12
+GAS LISTING /tmp/ccSyd2t1.s 			page 12
 
 
   65:test/Threads_C_API_test.cpp ****     finishedC = true;
@@ -718,7 +718,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
   30:test/Threads_C_API_test.cpp ****     for (uint64 i = 0; i < 16; i++) {
  460              		.loc 1 30 36 is_stmt 1
  461              		.cfi_startproc
-GAS LISTING /tmp/cct89ukB.s 			page 13
+GAS LISTING /tmp/ccSyd2t1.s 			page 13
 
 
  462              	.LVL61:
@@ -778,7 +778,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  507 037c 9387F752 		addi	a5,a5,1327
  508 0380 E3EEE7FC 		bgtu	a4,a5,.L26
   34:test/Threads_C_API_test.cpp ****             thread_dispatch();
-GAS LISTING /tmp/cct89ukB.s 			page 14
+GAS LISTING /tmp/ccSyd2t1.s 			page 14
 
 
  509              		.loc 1 34 13 discriminator 2
@@ -838,7 +838,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  548 03d0 6FF09FF9 		j	.L28
  549              	.LVL73:
  550              	.L24:
-GAS LISTING /tmp/cct89ukB.s 			page 15
+GAS LISTING /tmp/ccSyd2t1.s 			page 15
 
 
  551              	.LBE8:
@@ -898,7 +898,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  594              		.cfi_startproc
  595              	.LVL77:
  596 0410 130101FE 		addi	sp,sp,-32
-GAS LISTING /tmp/cct89ukB.s 			page 16
+GAS LISTING /tmp/ccSyd2t1.s 			page 16
 
 
  597              		.cfi_def_cfa_offset 32
@@ -958,7 +958,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
   22:test/Threads_C_API_test.cpp ****             thread_dispatch();
  642              		.loc 1 22 13 discriminator 2
  643 0458 13071700 		addi	a4,a4,1
-GAS LISTING /tmp/cct89ukB.s 			page 17
+GAS LISTING /tmp/ccSyd2t1.s 			page 17
 
 
  644              	.LVL83:
@@ -1018,7 +1018,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  683              	.L32:
  684              	.LBE16:
  685              	.LBE17:
-GAS LISTING /tmp/cct89ukB.s 			page 18
+GAS LISTING /tmp/ccSyd2t1.s 			page 18
 
 
  686              	.LBE10:
@@ -1078,7 +1078,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  722      61644320 
  722      63726561 
  722      7465640A 
-GAS LISTING /tmp/cct89ukB.s 			page 19
+GAS LISTING /tmp/ccSyd2t1.s 			page 19
 
 
  722      00
@@ -1138,7 +1138,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  759 0520 130584FD 		addi	a0,s0,-40
  760 0524 97000000 		call	_Z13thread_createPP7_threadPFvPvES2_
  760      E7800000 
-GAS LISTING /tmp/cct89ukB.s 			page 20
+GAS LISTING /tmp/ccSyd2t1.s 			page 20
 
 
  761              	.LVL94:
@@ -1198,7 +1198,7 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  795 0590 97000000 		call	_Z15thread_dispatchv
  795      E7800000 
  796              	.LVL100:
-GAS LISTING /tmp/cct89ukB.s 			page 21
+GAS LISTING /tmp/ccSyd2t1.s 			page 21
 
 
  797              	.L41:
@@ -1258,600 +1258,600 @@ GAS LISTING /tmp/cct89ukB.s 			page 1
  843              	_ZL9finishedA:
  844 0003 00       		.zero	1
  845              		.text
-GAS LISTING /tmp/cct89ukB.s 			page 22
+GAS LISTING /tmp/ccSyd2t1.s 			page 22
 
 
  846              	.Letext0:
  847              		.file 2 "test/../h/../lib/hw.h"
  848              		.file 3 "test/../h/syscall_c.hpp"
  849              		.file 4 "test/printing.hpp"
-GAS LISTING /tmp/cct89ukB.s 			page 23
+GAS LISTING /tmp/ccSyd2t1.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 Threads_C_API_test.cpp
-     /tmp/cct89ukB.s:11     .text:0000000000000000 _ZL9fibonaccim
-     /tmp/cct89ukB.s:15     .text:0000000000000000 .L0 
-     /tmp/cct89ukB.s:17     .text:0000000000000000 .L0 
-     /tmp/cct89ukB.s:18     .text:0000000000000004 .L0 
-     /tmp/cct89ukB.s:23     .text:0000000000000014 .L0 
-     /tmp/cct89ukB.s:24     .text:0000000000000014 .L0 
-     /tmp/cct89ukB.s:25     .text:0000000000000014 .L0 
-     /tmp/cct89ukB.s:26     .text:0000000000000014 .L0 
-     /tmp/cct89ukB.s:28     .text:0000000000000018 .L0 
-     /tmp/cct89ukB.s:31     .text:000000000000001c .L0 
-     /tmp/cct89ukB.s:34     .text:0000000000000024 .L0 
-     /tmp/cct89ukB.s:35     .text:0000000000000024 .L0 
-     /tmp/cct89ukB.s:38     .text:000000000000002c .L0 
-     /tmp/cct89ukB.s:42     .text:0000000000000030 .L0 
-     /tmp/cct89ukB.s:43     .text:0000000000000030 .L0 
-     /tmp/cct89ukB.s:48     .text:0000000000000040 .L0 
-     /tmp/cct89ukB.s:52     .text:000000000000004c .L0 
-     /tmp/cct89ukB.s:55     .text:0000000000000050 .L0 
-     /tmp/cct89ukB.s:56     .text:0000000000000054 .L0 
-     /tmp/cct89ukB.s:57     .text:0000000000000054 .L0 
-     /tmp/cct89ukB.s:59     .text:0000000000000058 .L0 
-     /tmp/cct89ukB.s:60     .text:0000000000000058 .L0 
-     /tmp/cct89ukB.s:62     .text:000000000000005c .L0 
-     /tmp/cct89ukB.s:65     .text:0000000000000060 .L0 
-     /tmp/cct89ukB.s:67     .text:0000000000000064 .L0 
-     /tmp/cct89ukB.s:71     .text:0000000000000068 .L0 
-     /tmp/cct89ukB.s:73     .text:0000000000000068 .L0 
-     /tmp/cct89ukB.s:74     .text:0000000000000068 .L0 
-     /tmp/cct89ukB.s:77     .text:0000000000000074 .L0 
-     /tmp/cct89ukB.s:99     .text:0000000000000074 _ZL11workerBodyDPv
-     /tmp/cct89ukB.s:102    .text:0000000000000074 .L0 
-     /tmp/cct89ukB.s:104    .text:0000000000000074 .L0 
-     /tmp/cct89ukB.s:105    .text:0000000000000078 .L0 
-     /tmp/cct89ukB.s:110    .text:0000000000000088 .L0 
-     /tmp/cct89ukB.s:111    .text:0000000000000088 .L0 
-     /tmp/cct89ukB.s:112    .text:0000000000000088 .L0 
-     /tmp/cct89ukB.s:113    .text:0000000000000088 .L0 
-     /tmp/cct89ukB.s:115    .text:000000000000008c .L0 
-     /tmp/cct89ukB.s:118    .text:000000000000008c .L0 
-     /tmp/cct89ukB.s:119    .text:000000000000008c .L0 
-     /tmp/cct89ukB.s:124    .text:0000000000000094 .L0 
-     /tmp/cct89ukB.s:125    .text:0000000000000094 .L0 
-     /tmp/cct89ukB.s:129    .text:00000000000000a4 .L0 
-     /tmp/cct89ukB.s:130    .text:00000000000000a4 .L0 
-     /tmp/cct89ukB.s:136    .text:00000000000000b8 .L0 
-     /tmp/cct89ukB.s:137    .text:00000000000000b8 .L0 
-     /tmp/cct89ukB.s:141    .text:00000000000000c8 .L0 
-     /tmp/cct89ukB.s:147    .text:00000000000000d0 .L0 
-     /tmp/cct89ukB.s:148    .text:00000000000000d0 .L0 
-     /tmp/cct89ukB.s:151    .text:00000000000000d8 .L0 
-     /tmp/cct89ukB.s:152    .text:00000000000000d8 .L0 
-     /tmp/cct89ukB.s:156    .text:00000000000000e8 .L0 
+     /tmp/ccSyd2t1.s:11     .text:0000000000000000 _ZL9fibonaccim
+     /tmp/ccSyd2t1.s:15     .text:0000000000000000 .L0 
+     /tmp/ccSyd2t1.s:17     .text:0000000000000000 .L0 
+     /tmp/ccSyd2t1.s:18     .text:0000000000000004 .L0 
+     /tmp/ccSyd2t1.s:23     .text:0000000000000014 .L0 
+     /tmp/ccSyd2t1.s:24     .text:0000000000000014 .L0 
+     /tmp/ccSyd2t1.s:25     .text:0000000000000014 .L0 
+     /tmp/ccSyd2t1.s:26     .text:0000000000000014 .L0 
+     /tmp/ccSyd2t1.s:28     .text:0000000000000018 .L0 
+     /tmp/ccSyd2t1.s:31     .text:000000000000001c .L0 
+     /tmp/ccSyd2t1.s:34     .text:0000000000000024 .L0 
+     /tmp/ccSyd2t1.s:35     .text:0000000000000024 .L0 
+     /tmp/ccSyd2t1.s:38     .text:000000000000002c .L0 
+     /tmp/ccSyd2t1.s:42     .text:0000000000000030 .L0 
+     /tmp/ccSyd2t1.s:43     .text:0000000000000030 .L0 
+     /tmp/ccSyd2t1.s:48     .text:0000000000000040 .L0 
+     /tmp/ccSyd2t1.s:52     .text:000000000000004c .L0 
+     /tmp/ccSyd2t1.s:55     .text:0000000000000050 .L0 
+     /tmp/ccSyd2t1.s:56     .text:0000000000000054 .L0 
+     /tmp/ccSyd2t1.s:57     .text:0000000000000054 .L0 
+     /tmp/ccSyd2t1.s:59     .text:0000000000000058 .L0 
+     /tmp/ccSyd2t1.s:60     .text:0000000000000058 .L0 
+     /tmp/ccSyd2t1.s:62     .text:000000000000005c .L0 
+     /tmp/ccSyd2t1.s:65     .text:0000000000000060 .L0 
+     /tmp/ccSyd2t1.s:67     .text:0000000000000064 .L0 
+     /tmp/ccSyd2t1.s:71     .text:0000000000000068 .L0 
+     /tmp/ccSyd2t1.s:73     .text:0000000000000068 .L0 
+     /tmp/ccSyd2t1.s:74     .text:0000000000000068 .L0 
+     /tmp/ccSyd2t1.s:77     .text:0000000000000074 .L0 
+     /tmp/ccSyd2t1.s:99     .text:0000000000000074 _ZL11workerBodyDPv
+     /tmp/ccSyd2t1.s:102    .text:0000000000000074 .L0 
+     /tmp/ccSyd2t1.s:104    .text:0000000000000074 .L0 
+     /tmp/ccSyd2t1.s:105    .text:0000000000000078 .L0 
+     /tmp/ccSyd2t1.s:110    .text:0000000000000088 .L0 
+     /tmp/ccSyd2t1.s:111    .text:0000000000000088 .L0 
+     /tmp/ccSyd2t1.s:112    .text:0000000000000088 .L0 
+     /tmp/ccSyd2t1.s:113    .text:0000000000000088 .L0 
+     /tmp/ccSyd2t1.s:115    .text:000000000000008c .L0 
+     /tmp/ccSyd2t1.s:118    .text:000000000000008c .L0 
+     /tmp/ccSyd2t1.s:119    .text:000000000000008c .L0 
+     /tmp/ccSyd2t1.s:124    .text:0000000000000094 .L0 
+     /tmp/ccSyd2t1.s:125    .text:0000000000000094 .L0 
+     /tmp/ccSyd2t1.s:129    .text:00000000000000a4 .L0 
+     /tmp/ccSyd2t1.s:130    .text:00000000000000a4 .L0 
+     /tmp/ccSyd2t1.s:136    .text:00000000000000b8 .L0 
+     /tmp/ccSyd2t1.s:137    .text:00000000000000b8 .L0 
+     /tmp/ccSyd2t1.s:141    .text:00000000000000c8 .L0 
+     /tmp/ccSyd2t1.s:147    .text:00000000000000d0 .L0 
+     /tmp/ccSyd2t1.s:148    .text:00000000000000d0 .L0 
+     /tmp/ccSyd2t1.s:151    .text:00000000000000d8 .L0 
+     /tmp/ccSyd2t1.s:152    .text:00000000000000d8 .L0 
+     /tmp/ccSyd2t1.s:156    .text:00000000000000e8 .L0 
 test/Threads_C_API_test.cpp:77     .text:00000000000000e8 .L0 
-     /tmp/cct89ukB.s:162    .text:00000000000000ec .L0 
-     /tmp/cct89ukB.s:164    .text:00000000000000ec .L0 
-GAS LISTING /tmp/cct89ukB.s 			page 24
+     /tmp/ccSyd2t1.s:162    .text:00000000000000ec .L0 
+     /tmp/ccSyd2t1.s:164    .text:00000000000000ec .L0 
+GAS LISTING /tmp/ccSyd2t1.s 			page 24
 
 
-     /tmp/cct89ukB.s:167    .text:00000000000000f4 .L0 
-     /tmp/cct89ukB.s:168    .text:00000000000000f4 .L0 
-     /tmp/cct89ukB.s:174    .text:0000000000000104 .L0 
-     /tmp/cct89ukB.s:175    .text:0000000000000104 .L0 
-     /tmp/cct89ukB.s:180    .text:0000000000000114 .L0 
-     /tmp/cct89ukB.s:181    .text:0000000000000114 .L0 
-     /tmp/cct89ukB.s:187    .text:0000000000000128 .L0 
-     /tmp/cct89ukB.s:188    .text:0000000000000128 .L0 
-     /tmp/cct89ukB.s:194    .text:000000000000013c .L0 
-     /tmp/cct89ukB.s:195    .text:000000000000013c .L0 
-     /tmp/cct89ukB.s:199    .text:000000000000014c .L0 
-     /tmp/cct89ukB.s:200    .text:000000000000014c .L0 
-     /tmp/cct89ukB.s:206    .text:0000000000000160 .L0 
-     /tmp/cct89ukB.s:207    .text:0000000000000160 .L0 
-     /tmp/cct89ukB.s:211    .text:0000000000000170 .L0 
-     /tmp/cct89ukB.s:217    .text:0000000000000178 .L0 
-     /tmp/cct89ukB.s:218    .text:0000000000000178 .L0 
-     /tmp/cct89ukB.s:221    .text:0000000000000180 .L0 
-     /tmp/cct89ukB.s:222    .text:0000000000000180 .L0 
-     /tmp/cct89ukB.s:226    .text:0000000000000190 .L0 
-     /tmp/cct89ukB.s:227    .text:0000000000000190 .L0 
-     /tmp/cct89ukB.s:831    .sbss:0000000000000000 _ZL9finishedD
-     /tmp/cct89ukB.s:230    .text:000000000000019c .L0 
-     /tmp/cct89ukB.s:231    .text:000000000000019c .L0 
-     /tmp/cct89ukB.s:234    .text:00000000000001a4 .L0 
-     /tmp/cct89ukB.s:235    .text:00000000000001a8 .L0 
-     /tmp/cct89ukB.s:237    .text:00000000000001ac .L0 
-     /tmp/cct89ukB.s:238    .text:00000000000001ac .L0 
-     /tmp/cct89ukB.s:240    .text:00000000000001b0 .L0 
-     /tmp/cct89ukB.s:243    .text:00000000000001b4 .L0 
-     /tmp/cct89ukB.s:246    .text:00000000000001b8 .L0 
-     /tmp/cct89ukB.s:248    .text:00000000000001bc .L0 
-     /tmp/cct89ukB.s:270    .text:00000000000001bc _ZL11workerBodyCPv
-     /tmp/cct89ukB.s:273    .text:00000000000001bc .L0 
-     /tmp/cct89ukB.s:275    .text:00000000000001bc .L0 
-     /tmp/cct89ukB.s:276    .text:00000000000001c0 .L0 
-     /tmp/cct89ukB.s:281    .text:00000000000001d0 .L0 
-     /tmp/cct89ukB.s:282    .text:00000000000001d0 .L0 
-     /tmp/cct89ukB.s:283    .text:00000000000001d0 .L0 
-     /tmp/cct89ukB.s:284    .text:00000000000001d0 .L0 
-     /tmp/cct89ukB.s:286    .text:00000000000001d4 .L0 
-     /tmp/cct89ukB.s:289    .text:00000000000001d4 .L0 
-     /tmp/cct89ukB.s:290    .text:00000000000001d4 .L0 
-     /tmp/cct89ukB.s:295    .text:00000000000001dc .L0 
-     /tmp/cct89ukB.s:296    .text:00000000000001dc .L0 
-     /tmp/cct89ukB.s:300    .text:00000000000001ec .L0 
-     /tmp/cct89ukB.s:301    .text:00000000000001ec .L0 
-     /tmp/cct89ukB.s:307    .text:0000000000000200 .L0 
-     /tmp/cct89ukB.s:308    .text:0000000000000200 .L0 
-     /tmp/cct89ukB.s:312    .text:0000000000000210 .L0 
-     /tmp/cct89ukB.s:318    .text:0000000000000218 .L0 
-     /tmp/cct89ukB.s:319    .text:0000000000000218 .L0 
-     /tmp/cct89ukB.s:322    .text:0000000000000220 .L0 
-     /tmp/cct89ukB.s:323    .text:0000000000000220 .L0 
-     /tmp/cct89ukB.s:327    .text:0000000000000230 .L0 
+     /tmp/ccSyd2t1.s:167    .text:00000000000000f4 .L0 
+     /tmp/ccSyd2t1.s:168    .text:00000000000000f4 .L0 
+     /tmp/ccSyd2t1.s:174    .text:0000000000000104 .L0 
+     /tmp/ccSyd2t1.s:175    .text:0000000000000104 .L0 
+     /tmp/ccSyd2t1.s:180    .text:0000000000000114 .L0 
+     /tmp/ccSyd2t1.s:181    .text:0000000000000114 .L0 
+     /tmp/ccSyd2t1.s:187    .text:0000000000000128 .L0 
+     /tmp/ccSyd2t1.s:188    .text:0000000000000128 .L0 
+     /tmp/ccSyd2t1.s:194    .text:000000000000013c .L0 
+     /tmp/ccSyd2t1.s:195    .text:000000000000013c .L0 
+     /tmp/ccSyd2t1.s:199    .text:000000000000014c .L0 
+     /tmp/ccSyd2t1.s:200    .text:000000000000014c .L0 
+     /tmp/ccSyd2t1.s:206    .text:0000000000000160 .L0 
+     /tmp/ccSyd2t1.s:207    .text:0000000000000160 .L0 
+     /tmp/ccSyd2t1.s:211    .text:0000000000000170 .L0 
+     /tmp/ccSyd2t1.s:217    .text:0000000000000178 .L0 
+     /tmp/ccSyd2t1.s:218    .text:0000000000000178 .L0 
+     /tmp/ccSyd2t1.s:221    .text:0000000000000180 .L0 
+     /tmp/ccSyd2t1.s:222    .text:0000000000000180 .L0 
+     /tmp/ccSyd2t1.s:226    .text:0000000000000190 .L0 
+     /tmp/ccSyd2t1.s:227    .text:0000000000000190 .L0 
+     /tmp/ccSyd2t1.s:831    .sbss:0000000000000000 _ZL9finishedD
+     /tmp/ccSyd2t1.s:230    .text:000000000000019c .L0 
+     /tmp/ccSyd2t1.s:231    .text:000000000000019c .L0 
+     /tmp/ccSyd2t1.s:234    .text:00000000000001a4 .L0 
+     /tmp/ccSyd2t1.s:235    .text:00000000000001a8 .L0 
+     /tmp/ccSyd2t1.s:237    .text:00000000000001ac .L0 
+     /tmp/ccSyd2t1.s:238    .text:00000000000001ac .L0 
+     /tmp/ccSyd2t1.s:240    .text:00000000000001b0 .L0 
+     /tmp/ccSyd2t1.s:243    .text:00000000000001b4 .L0 
+     /tmp/ccSyd2t1.s:246    .text:00000000000001b8 .L0 
+     /tmp/ccSyd2t1.s:248    .text:00000000000001bc .L0 
+     /tmp/ccSyd2t1.s:270    .text:00000000000001bc _ZL11workerBodyCPv
+     /tmp/ccSyd2t1.s:273    .text:00000000000001bc .L0 
+     /tmp/ccSyd2t1.s:275    .text:00000000000001bc .L0 
+     /tmp/ccSyd2t1.s:276    .text:00000000000001c0 .L0 
+     /tmp/ccSyd2t1.s:281    .text:00000000000001d0 .L0 
+     /tmp/ccSyd2t1.s:282    .text:00000000000001d0 .L0 
+     /tmp/ccSyd2t1.s:283    .text:00000000000001d0 .L0 
+     /tmp/ccSyd2t1.s:284    .text:00000000000001d0 .L0 
+     /tmp/ccSyd2t1.s:286    .text:00000000000001d4 .L0 
+     /tmp/ccSyd2t1.s:289    .text:00000000000001d4 .L0 
+     /tmp/ccSyd2t1.s:290    .text:00000000000001d4 .L0 
+     /tmp/ccSyd2t1.s:295    .text:00000000000001dc .L0 
+     /tmp/ccSyd2t1.s:296    .text:00000000000001dc .L0 
+     /tmp/ccSyd2t1.s:300    .text:00000000000001ec .L0 
+     /tmp/ccSyd2t1.s:301    .text:00000000000001ec .L0 
+     /tmp/ccSyd2t1.s:307    .text:0000000000000200 .L0 
+     /tmp/ccSyd2t1.s:308    .text:0000000000000200 .L0 
+     /tmp/ccSyd2t1.s:312    .text:0000000000000210 .L0 
+     /tmp/ccSyd2t1.s:318    .text:0000000000000218 .L0 
+     /tmp/ccSyd2t1.s:319    .text:0000000000000218 .L0 
+     /tmp/ccSyd2t1.s:322    .text:0000000000000220 .L0 
+     /tmp/ccSyd2t1.s:323    .text:0000000000000220 .L0 
+     /tmp/ccSyd2t1.s:327    .text:0000000000000230 .L0 
 test/Threads_C_API_test.cpp:50     .text:0000000000000230 .L0 
-     /tmp/cct89ukB.s:333    .text:0000000000000234 .L0 
-GAS LISTING /tmp/cct89ukB.s 			page 25
+     /tmp/ccSyd2t1.s:333    .text:0000000000000234 .L0 
+GAS LISTING /tmp/ccSyd2t1.s 			page 25
 
 
-     /tmp/cct89ukB.s:335    .text:0000000000000234 .L0 
-     /tmp/cct89ukB.s:338    .text:000000000000023c .L0 
-     /tmp/cct89ukB.s:339    .text:000000000000023c .L0 
+     /tmp/ccSyd2t1.s:335    .text:0000000000000234 .L0 
+     /tmp/ccSyd2t1.s:338    .text:000000000000023c .L0 
+     /tmp/ccSyd2t1.s:339    .text:000000000000023c .L0 
 test/Threads_C_API_test.cpp:54     .text:000000000000023c .L0 
-     /tmp/cct89ukB.s:346    .text:0000000000000240 .L0 
-     /tmp/cct89ukB.s:348    .text:0000000000000240 .L0 
-     /tmp/cct89ukB.s:352    .text:0000000000000250 .L0 
-     /tmp/cct89ukB.s:353    .text:0000000000000250 .L0 
-     /tmp/cct89ukB.s:359    .text:0000000000000264 .L0 
-     /tmp/cct89ukB.s:360    .text:0000000000000264 .L0 
-     /tmp/cct89ukB.s:364    .text:0000000000000274 .L0 
-     /tmp/cct89ukB.s:365    .text:0000000000000274 .L0 
-     /tmp/cct89ukB.s:371    .text:0000000000000284 .L0 
-     /tmp/cct89ukB.s:372    .text:0000000000000284 .L0 
-     /tmp/cct89ukB.s:377    .text:0000000000000294 .L0 
-     /tmp/cct89ukB.s:378    .text:0000000000000294 .L0 
-     /tmp/cct89ukB.s:384    .text:00000000000002a8 .L0 
-     /tmp/cct89ukB.s:385    .text:00000000000002a8 .L0 
-     /tmp/cct89ukB.s:391    .text:00000000000002bc .L0 
-     /tmp/cct89ukB.s:392    .text:00000000000002bc .L0 
-     /tmp/cct89ukB.s:396    .text:00000000000002cc .L0 
-     /tmp/cct89ukB.s:397    .text:00000000000002cc .L0 
-     /tmp/cct89ukB.s:403    .text:00000000000002e0 .L0 
-     /tmp/cct89ukB.s:404    .text:00000000000002e0 .L0 
-     /tmp/cct89ukB.s:408    .text:00000000000002f0 .L0 
-     /tmp/cct89ukB.s:414    .text:00000000000002f8 .L0 
-     /tmp/cct89ukB.s:415    .text:00000000000002f8 .L0 
-     /tmp/cct89ukB.s:418    .text:0000000000000300 .L0 
-     /tmp/cct89ukB.s:419    .text:0000000000000300 .L0 
-     /tmp/cct89ukB.s:423    .text:0000000000000310 .L0 
-     /tmp/cct89ukB.s:424    .text:0000000000000310 .L0 
-     /tmp/cct89ukB.s:835    .sbss:0000000000000001 _ZL9finishedC
-     /tmp/cct89ukB.s:427    .text:000000000000031c .L0 
-     /tmp/cct89ukB.s:428    .text:000000000000031c .L0 
-     /tmp/cct89ukB.s:431    .text:0000000000000324 .L0 
-     /tmp/cct89ukB.s:432    .text:0000000000000328 .L0 
-     /tmp/cct89ukB.s:434    .text:000000000000032c .L0 
-     /tmp/cct89ukB.s:435    .text:000000000000032c .L0 
-     /tmp/cct89ukB.s:437    .text:0000000000000330 .L0 
-     /tmp/cct89ukB.s:440    .text:0000000000000334 .L0 
-     /tmp/cct89ukB.s:443    .text:0000000000000338 .L0 
-     /tmp/cct89ukB.s:445    .text:000000000000033c .L0 
-     /tmp/cct89ukB.s:458    .text:000000000000033c _ZL11workerBodyBPv
-     /tmp/cct89ukB.s:461    .text:000000000000033c .L0 
-     /tmp/cct89ukB.s:463    .text:000000000000033c .L0 
-     /tmp/cct89ukB.s:464    .text:0000000000000340 .L0 
-     /tmp/cct89ukB.s:469    .text:0000000000000350 .L0 
-     /tmp/cct89ukB.s:470    .text:0000000000000350 .L0 
-     /tmp/cct89ukB.s:471    .text:0000000000000350 .L0 
-     /tmp/cct89ukB.s:472    .text:0000000000000350 .L0 
-     /tmp/cct89ukB.s:474    .text:0000000000000354 .L0 
-     /tmp/cct89ukB.s:478    .text:0000000000000354 .L0 
-     /tmp/cct89ukB.s:479    .text:0000000000000354 .L0 
-     /tmp/cct89ukB.s:487    .text:000000000000035c .L0 
-     /tmp/cct89ukB.s:488    .text:000000000000035c .L0 
-     /tmp/cct89ukB.s:492    .text:0000000000000364 .L0 
-     /tmp/cct89ukB.s:496    .text:0000000000000368 .L0 
-GAS LISTING /tmp/cct89ukB.s 			page 26
+     /tmp/ccSyd2t1.s:346    .text:0000000000000240 .L0 
+     /tmp/ccSyd2t1.s:348    .text:0000000000000240 .L0 
+     /tmp/ccSyd2t1.s:352    .text:0000000000000250 .L0 
+     /tmp/ccSyd2t1.s:353    .text:0000000000000250 .L0 
+     /tmp/ccSyd2t1.s:359    .text:0000000000000264 .L0 
+     /tmp/ccSyd2t1.s:360    .text:0000000000000264 .L0 
+     /tmp/ccSyd2t1.s:364    .text:0000000000000274 .L0 
+     /tmp/ccSyd2t1.s:365    .text:0000000000000274 .L0 
+     /tmp/ccSyd2t1.s:371    .text:0000000000000284 .L0 
+     /tmp/ccSyd2t1.s:372    .text:0000000000000284 .L0 
+     /tmp/ccSyd2t1.s:377    .text:0000000000000294 .L0 
+     /tmp/ccSyd2t1.s:378    .text:0000000000000294 .L0 
+     /tmp/ccSyd2t1.s:384    .text:00000000000002a8 .L0 
+     /tmp/ccSyd2t1.s:385    .text:00000000000002a8 .L0 
+     /tmp/ccSyd2t1.s:391    .text:00000000000002bc .L0 
+     /tmp/ccSyd2t1.s:392    .text:00000000000002bc .L0 
+     /tmp/ccSyd2t1.s:396    .text:00000000000002cc .L0 
+     /tmp/ccSyd2t1.s:397    .text:00000000000002cc .L0 
+     /tmp/ccSyd2t1.s:403    .text:00000000000002e0 .L0 
+     /tmp/ccSyd2t1.s:404    .text:00000000000002e0 .L0 
+     /tmp/ccSyd2t1.s:408    .text:00000000000002f0 .L0 
+     /tmp/ccSyd2t1.s:414    .text:00000000000002f8 .L0 
+     /tmp/ccSyd2t1.s:415    .text:00000000000002f8 .L0 
+     /tmp/ccSyd2t1.s:418    .text:0000000000000300 .L0 
+     /tmp/ccSyd2t1.s:419    .text:0000000000000300 .L0 
+     /tmp/ccSyd2t1.s:423    .text:0000000000000310 .L0 
+     /tmp/ccSyd2t1.s:424    .text:0000000000000310 .L0 
+     /tmp/ccSyd2t1.s:835    .sbss:0000000000000001 _ZL9finishedC
+     /tmp/ccSyd2t1.s:427    .text:000000000000031c .L0 
+     /tmp/ccSyd2t1.s:428    .text:000000000000031c .L0 
+     /tmp/ccSyd2t1.s:431    .text:0000000000000324 .L0 
+     /tmp/ccSyd2t1.s:432    .text:0000000000000328 .L0 
+     /tmp/ccSyd2t1.s:434    .text:000000000000032c .L0 
+     /tmp/ccSyd2t1.s:435    .text:000000000000032c .L0 
+     /tmp/ccSyd2t1.s:437    .text:0000000000000330 .L0 
+     /tmp/ccSyd2t1.s:440    .text:0000000000000334 .L0 
+     /tmp/ccSyd2t1.s:443    .text:0000000000000338 .L0 
+     /tmp/ccSyd2t1.s:445    .text:000000000000033c .L0 
+     /tmp/ccSyd2t1.s:458    .text:000000000000033c _ZL11workerBodyBPv
+     /tmp/ccSyd2t1.s:461    .text:000000000000033c .L0 
+     /tmp/ccSyd2t1.s:463    .text:000000000000033c .L0 
+     /tmp/ccSyd2t1.s:464    .text:0000000000000340 .L0 
+     /tmp/ccSyd2t1.s:469    .text:0000000000000350 .L0 
+     /tmp/ccSyd2t1.s:470    .text:0000000000000350 .L0 
+     /tmp/ccSyd2t1.s:471    .text:0000000000000350 .L0 
+     /tmp/ccSyd2t1.s:472    .text:0000000000000350 .L0 
+     /tmp/ccSyd2t1.s:474    .text:0000000000000354 .L0 
+     /tmp/ccSyd2t1.s:478    .text:0000000000000354 .L0 
+     /tmp/ccSyd2t1.s:479    .text:0000000000000354 .L0 
+     /tmp/ccSyd2t1.s:487    .text:000000000000035c .L0 
+     /tmp/ccSyd2t1.s:488    .text:000000000000035c .L0 
+     /tmp/ccSyd2t1.s:492    .text:0000000000000364 .L0 
+     /tmp/ccSyd2t1.s:496    .text:0000000000000368 .L0 
+GAS LISTING /tmp/ccSyd2t1.s 			page 26
 
 
-     /tmp/cct89ukB.s:502    .text:0000000000000374 .L0 
-     /tmp/cct89ukB.s:506    .text:0000000000000378 .L0 
-     /tmp/cct89ukB.s:510    .text:0000000000000384 .L0 
-     /tmp/cct89ukB.s:520    .text:000000000000038c .L0 
-     /tmp/cct89ukB.s:524    .text:0000000000000390 .L0 
-     /tmp/cct89ukB.s:528    .text:0000000000000398 .L0 
-     /tmp/cct89ukB.s:529    .text:0000000000000398 .L0 
-     /tmp/cct89ukB.s:533    .text:00000000000003a8 .L0 
-     /tmp/cct89ukB.s:534    .text:00000000000003a8 .L0 
-     /tmp/cct89ukB.s:540    .text:00000000000003bc .L0 
-     /tmp/cct89ukB.s:541    .text:00000000000003bc .L0 
-     /tmp/cct89ukB.s:546    .text:00000000000003cc .L0 
-     /tmp/cct89ukB.s:547    .text:00000000000003cc .L0 
-     /tmp/cct89ukB.s:555    .text:00000000000003d4 .L0 
-     /tmp/cct89ukB.s:556    .text:00000000000003d4 .L0 
-     /tmp/cct89ukB.s:560    .text:00000000000003e4 .L0 
-     /tmp/cct89ukB.s:561    .text:00000000000003e4 .L0 
-     /tmp/cct89ukB.s:839    .sbss:0000000000000002 _ZL9finishedB
-     /tmp/cct89ukB.s:564    .text:00000000000003f0 .L0 
-     /tmp/cct89ukB.s:565    .text:00000000000003f0 .L0 
-     /tmp/cct89ukB.s:568    .text:00000000000003f8 .L0 
-     /tmp/cct89ukB.s:569    .text:00000000000003fc .L0 
-     /tmp/cct89ukB.s:571    .text:0000000000000400 .L0 
-     /tmp/cct89ukB.s:572    .text:0000000000000400 .L0 
-     /tmp/cct89ukB.s:574    .text:0000000000000404 .L0 
-     /tmp/cct89ukB.s:576    .text:0000000000000408 .L0 
-     /tmp/cct89ukB.s:579    .text:000000000000040c .L0 
-     /tmp/cct89ukB.s:581    .text:0000000000000410 .L0 
-     /tmp/cct89ukB.s:591    .text:0000000000000410 _ZL11workerBodyAPv
-     /tmp/cct89ukB.s:594    .text:0000000000000410 .L0 
-     /tmp/cct89ukB.s:596    .text:0000000000000410 .L0 
-     /tmp/cct89ukB.s:597    .text:0000000000000414 .L0 
-     /tmp/cct89ukB.s:602    .text:0000000000000424 .L0 
-     /tmp/cct89ukB.s:603    .text:0000000000000424 .L0 
-     /tmp/cct89ukB.s:604    .text:0000000000000424 .L0 
-     /tmp/cct89ukB.s:605    .text:0000000000000424 .L0 
-     /tmp/cct89ukB.s:607    .text:0000000000000428 .L0 
-     /tmp/cct89ukB.s:611    .text:0000000000000428 .L0 
-     /tmp/cct89ukB.s:612    .text:0000000000000428 .L0 
-     /tmp/cct89ukB.s:620    .text:0000000000000430 .L0 
-     /tmp/cct89ukB.s:621    .text:0000000000000430 .L0 
-     /tmp/cct89ukB.s:625    .text:0000000000000438 .L0 
-     /tmp/cct89ukB.s:629    .text:000000000000043c .L0 
-     /tmp/cct89ukB.s:635    .text:0000000000000448 .L0 
-     /tmp/cct89ukB.s:639    .text:000000000000044c .L0 
-     /tmp/cct89ukB.s:643    .text:0000000000000458 .L0 
-     /tmp/cct89ukB.s:653    .text:0000000000000460 .L0 
-     /tmp/cct89ukB.s:657    .text:0000000000000464 .L0 
-     /tmp/cct89ukB.s:661    .text:000000000000046c .L0 
-     /tmp/cct89ukB.s:662    .text:000000000000046c .L0 
-     /tmp/cct89ukB.s:666    .text:000000000000047c .L0 
-     /tmp/cct89ukB.s:667    .text:000000000000047c .L0 
-     /tmp/cct89ukB.s:673    .text:0000000000000490 .L0 
-     /tmp/cct89ukB.s:674    .text:0000000000000490 .L0 
-     /tmp/cct89ukB.s:679    .text:00000000000004a0 .L0 
-     /tmp/cct89ukB.s:680    .text:00000000000004a0 .L0 
-     /tmp/cct89ukB.s:688    .text:00000000000004a8 .L0 
-GAS LISTING /tmp/cct89ukB.s 			page 27
+     /tmp/ccSyd2t1.s:502    .text:0000000000000374 .L0 
+     /tmp/ccSyd2t1.s:506    .text:0000000000000378 .L0 
+     /tmp/ccSyd2t1.s:510    .text:0000000000000384 .L0 
+     /tmp/ccSyd2t1.s:520    .text:000000000000038c .L0 
+     /tmp/ccSyd2t1.s:524    .text:0000000000000390 .L0 
+     /tmp/ccSyd2t1.s:528    .text:0000000000000398 .L0 
+     /tmp/ccSyd2t1.s:529    .text:0000000000000398 .L0 
+     /tmp/ccSyd2t1.s:533    .text:00000000000003a8 .L0 
+     /tmp/ccSyd2t1.s:534    .text:00000000000003a8 .L0 
+     /tmp/ccSyd2t1.s:540    .text:00000000000003bc .L0 
+     /tmp/ccSyd2t1.s:541    .text:00000000000003bc .L0 
+     /tmp/ccSyd2t1.s:546    .text:00000000000003cc .L0 
+     /tmp/ccSyd2t1.s:547    .text:00000000000003cc .L0 
+     /tmp/ccSyd2t1.s:555    .text:00000000000003d4 .L0 
+     /tmp/ccSyd2t1.s:556    .text:00000000000003d4 .L0 
+     /tmp/ccSyd2t1.s:560    .text:00000000000003e4 .L0 
+     /tmp/ccSyd2t1.s:561    .text:00000000000003e4 .L0 
+     /tmp/ccSyd2t1.s:839    .sbss:0000000000000002 _ZL9finishedB
+     /tmp/ccSyd2t1.s:564    .text:00000000000003f0 .L0 
+     /tmp/ccSyd2t1.s:565    .text:00000000000003f0 .L0 
+     /tmp/ccSyd2t1.s:568    .text:00000000000003f8 .L0 
+     /tmp/ccSyd2t1.s:569    .text:00000000000003fc .L0 
+     /tmp/ccSyd2t1.s:571    .text:0000000000000400 .L0 
+     /tmp/ccSyd2t1.s:572    .text:0000000000000400 .L0 
+     /tmp/ccSyd2t1.s:574    .text:0000000000000404 .L0 
+     /tmp/ccSyd2t1.s:576    .text:0000000000000408 .L0 
+     /tmp/ccSyd2t1.s:579    .text:000000000000040c .L0 
+     /tmp/ccSyd2t1.s:581    .text:0000000000000410 .L0 
+     /tmp/ccSyd2t1.s:591    .text:0000000000000410 _ZL11workerBodyAPv
+     /tmp/ccSyd2t1.s:594    .text:0000000000000410 .L0 
+     /tmp/ccSyd2t1.s:596    .text:0000000000000410 .L0 
+     /tmp/ccSyd2t1.s:597    .text:0000000000000414 .L0 
+     /tmp/ccSyd2t1.s:602    .text:0000000000000424 .L0 
+     /tmp/ccSyd2t1.s:603    .text:0000000000000424 .L0 
+     /tmp/ccSyd2t1.s:604    .text:0000000000000424 .L0 
+     /tmp/ccSyd2t1.s:605    .text:0000000000000424 .L0 
+     /tmp/ccSyd2t1.s:607    .text:0000000000000428 .L0 
+     /tmp/ccSyd2t1.s:611    .text:0000000000000428 .L0 
+     /tmp/ccSyd2t1.s:612    .text:0000000000000428 .L0 
+     /tmp/ccSyd2t1.s:620    .text:0000000000000430 .L0 
+     /tmp/ccSyd2t1.s:621    .text:0000000000000430 .L0 
+     /tmp/ccSyd2t1.s:625    .text:0000000000000438 .L0 
+     /tmp/ccSyd2t1.s:629    .text:000000000000043c .L0 
+     /tmp/ccSyd2t1.s:635    .text:0000000000000448 .L0 
+     /tmp/ccSyd2t1.s:639    .text:000000000000044c .L0 
+     /tmp/ccSyd2t1.s:643    .text:0000000000000458 .L0 
+     /tmp/ccSyd2t1.s:653    .text:0000000000000460 .L0 
+     /tmp/ccSyd2t1.s:657    .text:0000000000000464 .L0 
+     /tmp/ccSyd2t1.s:661    .text:000000000000046c .L0 
+     /tmp/ccSyd2t1.s:662    .text:000000000000046c .L0 
+     /tmp/ccSyd2t1.s:666    .text:000000000000047c .L0 
+     /tmp/ccSyd2t1.s:667    .text:000000000000047c .L0 
+     /tmp/ccSyd2t1.s:673    .text:0000000000000490 .L0 
+     /tmp/ccSyd2t1.s:674    .text:0000000000000490 .L0 
+     /tmp/ccSyd2t1.s:679    .text:00000000000004a0 .L0 
+     /tmp/ccSyd2t1.s:680    .text:00000000000004a0 .L0 
+     /tmp/ccSyd2t1.s:688    .text:00000000000004a8 .L0 
+GAS LISTING /tmp/ccSyd2t1.s 			page 27
 
 
-     /tmp/cct89ukB.s:689    .text:00000000000004a8 .L0 
-     /tmp/cct89ukB.s:693    .text:00000000000004b8 .L0 
-     /tmp/cct89ukB.s:694    .text:00000000000004b8 .L0 
-     /tmp/cct89ukB.s:843    .sbss:0000000000000003 _ZL9finishedA
-     /tmp/cct89ukB.s:697    .text:00000000000004c4 .L0 
-     /tmp/cct89ukB.s:698    .text:00000000000004c8 .L0 
-     /tmp/cct89ukB.s:700    .text:00000000000004cc .L0 
-     /tmp/cct89ukB.s:701    .text:00000000000004cc .L0 
-     /tmp/cct89ukB.s:703    .text:00000000000004d0 .L0 
-     /tmp/cct89ukB.s:705    .text:00000000000004d4 .L0 
-     /tmp/cct89ukB.s:708    .text:00000000000004d8 .L0 
-     /tmp/cct89ukB.s:710    .text:00000000000004dc .L0 
-     /tmp/cct89ukB.s:730    .text:00000000000004dc _Z18Threads_C_API_testv
-     /tmp/cct89ukB.s:733    .text:00000000000004dc .L0 
-     /tmp/cct89ukB.s:734    .text:00000000000004dc .L0 
-     /tmp/cct89ukB.s:735    .text:00000000000004e0 .L0 
-     /tmp/cct89ukB.s:738    .text:00000000000004e8 .L0 
-     /tmp/cct89ukB.s:739    .text:00000000000004e8 .L0 
-     /tmp/cct89ukB.s:741    .text:00000000000004ec .L0 
-     /tmp/cct89ukB.s:743    .text:00000000000004ec .L0 
-     /tmp/cct89ukB.s:744    .text:00000000000004ec .L0 
-     /tmp/cct89ukB.s:745    .text:00000000000004ec .L0 
-     /tmp/cct89ukB.s:751    .text:0000000000000504 .L0 
-     /tmp/cct89ukB.s:752    .text:0000000000000504 .L0 
-     /tmp/cct89ukB.s:756    .text:0000000000000514 .L0 
-     /tmp/cct89ukB.s:757    .text:0000000000000514 .L0 
-     /tmp/cct89ukB.s:763    .text:000000000000052c .L0 
-     /tmp/cct89ukB.s:764    .text:000000000000052c .L0 
-     /tmp/cct89ukB.s:768    .text:000000000000053c .L0 
-     /tmp/cct89ukB.s:769    .text:000000000000053c .L0 
-     /tmp/cct89ukB.s:775    .text:0000000000000554 .L0 
-     /tmp/cct89ukB.s:776    .text:0000000000000554 .L0 
-     /tmp/cct89ukB.s:780    .text:0000000000000564 .L0 
-     /tmp/cct89ukB.s:781    .text:0000000000000564 .L0 
-     /tmp/cct89ukB.s:787    .text:000000000000057c .L0 
-     /tmp/cct89ukB.s:788    .text:000000000000057c .L0 
-     /tmp/cct89ukB.s:794    .text:0000000000000590 .L0 
-     /tmp/cct89ukB.s:795    .text:0000000000000590 .L0 
-     /tmp/cct89ukB.s:799    .text:0000000000000598 .L0 
-     /tmp/cct89ukB.s:800    .text:0000000000000598 .L0 
-     /tmp/cct89ukB.s:801    .text:0000000000000598 .L0 
-     /tmp/cct89ukB.s:803    .text:00000000000005a0 .L0 
-     /tmp/cct89ukB.s:805    .text:00000000000005a4 .L0 
-     /tmp/cct89ukB.s:807    .text:00000000000005ac .L0 
-     /tmp/cct89ukB.s:809    .text:00000000000005b0 .L0 
-     /tmp/cct89ukB.s:811    .text:00000000000005b8 .L0 
-     /tmp/cct89ukB.s:813    .text:00000000000005bc .L0 
-     /tmp/cct89ukB.s:815    .text:00000000000005c4 .L0 
-     /tmp/cct89ukB.s:817    .text:00000000000005c8 .L0 
-     /tmp/cct89ukB.s:818    .text:00000000000005cc .L0 
-     /tmp/cct89ukB.s:820    .text:00000000000005d0 .L0 
-     /tmp/cct89ukB.s:821    .text:00000000000005d0 .L0 
-     /tmp/cct89ukB.s:823    .text:00000000000005d4 .L0 
-     /tmp/cct89ukB.s:825    .text:00000000000005d8 .L0 
-     /tmp/cct89ukB.s:850    .text:00000000000005d8 .L0 
-     /tmp/cct89ukB.s:82     .rodata.str1.8:0000000000000000 .LC0
-     /tmp/cct89ukB.s:125    .text:0000000000000094 .L0 
-GAS LISTING /tmp/cct89ukB.s 			page 28
+     /tmp/ccSyd2t1.s:689    .text:00000000000004a8 .L0 
+     /tmp/ccSyd2t1.s:693    .text:00000000000004b8 .L0 
+     /tmp/ccSyd2t1.s:694    .text:00000000000004b8 .L0 
+     /tmp/ccSyd2t1.s:843    .sbss:0000000000000003 _ZL9finishedA
+     /tmp/ccSyd2t1.s:697    .text:00000000000004c4 .L0 
+     /tmp/ccSyd2t1.s:698    .text:00000000000004c8 .L0 
+     /tmp/ccSyd2t1.s:700    .text:00000000000004cc .L0 
+     /tmp/ccSyd2t1.s:701    .text:00000000000004cc .L0 
+     /tmp/ccSyd2t1.s:703    .text:00000000000004d0 .L0 
+     /tmp/ccSyd2t1.s:705    .text:00000000000004d4 .L0 
+     /tmp/ccSyd2t1.s:708    .text:00000000000004d8 .L0 
+     /tmp/ccSyd2t1.s:710    .text:00000000000004dc .L0 
+     /tmp/ccSyd2t1.s:730    .text:00000000000004dc _Z18Threads_C_API_testv
+     /tmp/ccSyd2t1.s:733    .text:00000000000004dc .L0 
+     /tmp/ccSyd2t1.s:734    .text:00000000000004dc .L0 
+     /tmp/ccSyd2t1.s:735    .text:00000000000004e0 .L0 
+     /tmp/ccSyd2t1.s:738    .text:00000000000004e8 .L0 
+     /tmp/ccSyd2t1.s:739    .text:00000000000004e8 .L0 
+     /tmp/ccSyd2t1.s:741    .text:00000000000004ec .L0 
+     /tmp/ccSyd2t1.s:743    .text:00000000000004ec .L0 
+     /tmp/ccSyd2t1.s:744    .text:00000000000004ec .L0 
+     /tmp/ccSyd2t1.s:745    .text:00000000000004ec .L0 
+     /tmp/ccSyd2t1.s:751    .text:0000000000000504 .L0 
+     /tmp/ccSyd2t1.s:752    .text:0000000000000504 .L0 
+     /tmp/ccSyd2t1.s:756    .text:0000000000000514 .L0 
+     /tmp/ccSyd2t1.s:757    .text:0000000000000514 .L0 
+     /tmp/ccSyd2t1.s:763    .text:000000000000052c .L0 
+     /tmp/ccSyd2t1.s:764    .text:000000000000052c .L0 
+     /tmp/ccSyd2t1.s:768    .text:000000000000053c .L0 
+     /tmp/ccSyd2t1.s:769    .text:000000000000053c .L0 
+     /tmp/ccSyd2t1.s:775    .text:0000000000000554 .L0 
+     /tmp/ccSyd2t1.s:776    .text:0000000000000554 .L0 
+     /tmp/ccSyd2t1.s:780    .text:0000000000000564 .L0 
+     /tmp/ccSyd2t1.s:781    .text:0000000000000564 .L0 
+     /tmp/ccSyd2t1.s:787    .text:000000000000057c .L0 
+     /tmp/ccSyd2t1.s:788    .text:000000000000057c .L0 
+     /tmp/ccSyd2t1.s:794    .text:0000000000000590 .L0 
+     /tmp/ccSyd2t1.s:795    .text:0000000000000590 .L0 
+     /tmp/ccSyd2t1.s:799    .text:0000000000000598 .L0 
+     /tmp/ccSyd2t1.s:800    .text:0000000000000598 .L0 
+     /tmp/ccSyd2t1.s:801    .text:0000000000000598 .L0 
+     /tmp/ccSyd2t1.s:803    .text:00000000000005a0 .L0 
+     /tmp/ccSyd2t1.s:805    .text:00000000000005a4 .L0 
+     /tmp/ccSyd2t1.s:807    .text:00000000000005ac .L0 
+     /tmp/ccSyd2t1.s:809    .text:00000000000005b0 .L0 
+     /tmp/ccSyd2t1.s:811    .text:00000000000005b8 .L0 
+     /tmp/ccSyd2t1.s:813    .text:00000000000005bc .L0 
+     /tmp/ccSyd2t1.s:815    .text:00000000000005c4 .L0 
+     /tmp/ccSyd2t1.s:817    .text:00000000000005c8 .L0 
+     /tmp/ccSyd2t1.s:818    .text:00000000000005cc .L0 
+     /tmp/ccSyd2t1.s:820    .text:00000000000005d0 .L0 
+     /tmp/ccSyd2t1.s:821    .text:00000000000005d0 .L0 
+     /tmp/ccSyd2t1.s:823    .text:00000000000005d4 .L0 
+     /tmp/ccSyd2t1.s:825    .text:00000000000005d8 .L0 
+     /tmp/ccSyd2t1.s:850    .text:00000000000005d8 .L0 
+     /tmp/ccSyd2t1.s:82     .rodata.str1.8:0000000000000000 .LC0
+     /tmp/ccSyd2t1.s:125    .text:0000000000000094 .L0 
+GAS LISTING /tmp/ccSyd2t1.s 			page 28
 
 
-     /tmp/cct89ukB.s:85     .rodata.str1.8:0000000000000008 .LC1
-     /tmp/cct89ukB.s:137    .text:00000000000000b8 .L0 
-     /tmp/cct89ukB.s:88     .rodata.str1.8:0000000000000010 .LC2
-     /tmp/cct89ukB.s:152    .text:00000000000000d8 .L0 
-     /tmp/cct89ukB.s:91     .rodata.str1.8:0000000000000020 .LC3
-     /tmp/cct89ukB.s:175    .text:0000000000000104 .L0 
-     /tmp/cct89ukB.s:188    .text:0000000000000128 .L0 
-     /tmp/cct89ukB.s:195    .text:000000000000013c .L0 
-     /tmp/cct89ukB.s:207    .text:0000000000000160 .L0 
-     /tmp/cct89ukB.s:94     .rodata.str1.8:0000000000000030 .LC4
-     /tmp/cct89ukB.s:222    .text:0000000000000180 .L0 
-     /tmp/cct89ukB.s:228    .text:0000000000000194 .L0 
-     /tmp/cct89ukB.s:253    .rodata.str1.8:0000000000000040 .LC5
-     /tmp/cct89ukB.s:296    .text:00000000000001dc .L0 
-     /tmp/cct89ukB.s:308    .text:0000000000000200 .L0 
-     /tmp/cct89ukB.s:256    .rodata.str1.8:0000000000000048 .LC6
-     /tmp/cct89ukB.s:323    .text:0000000000000220 .L0 
-     /tmp/cct89ukB.s:259    .rodata.str1.8:0000000000000058 .LC7
-     /tmp/cct89ukB.s:348    .text:0000000000000240 .L0 
-     /tmp/cct89ukB.s:360    .text:0000000000000264 .L0 
-     /tmp/cct89ukB.s:262    .rodata.str1.8:0000000000000060 .LC8
-     /tmp/cct89ukB.s:372    .text:0000000000000284 .L0 
-     /tmp/cct89ukB.s:385    .text:00000000000002a8 .L0 
-     /tmp/cct89ukB.s:392    .text:00000000000002bc .L0 
-     /tmp/cct89ukB.s:404    .text:00000000000002e0 .L0 
-     /tmp/cct89ukB.s:265    .rodata.str1.8:0000000000000070 .LC9
-     /tmp/cct89ukB.s:419    .text:0000000000000300 .L0 
-     /tmp/cct89ukB.s:425    .text:0000000000000314 .L0 
-     /tmp/cct89ukB.s:450    .rodata.str1.8:0000000000000080 .LC10
-     /tmp/cct89ukB.s:529    .text:0000000000000398 .L0 
-     /tmp/cct89ukB.s:541    .text:00000000000003bc .L0 
-     /tmp/cct89ukB.s:453    .rodata.str1.8:0000000000000088 .LC11
-     /tmp/cct89ukB.s:556    .text:00000000000003d4 .L0 
-     /tmp/cct89ukB.s:562    .text:00000000000003e8 .L0 
-     /tmp/cct89ukB.s:586    .rodata.str1.8:0000000000000098 .LC12
-     /tmp/cct89ukB.s:662    .text:000000000000046c .L0 
-     /tmp/cct89ukB.s:674    .text:0000000000000490 .L0 
-     /tmp/cct89ukB.s:689    .text:00000000000004a8 .L0 
-     /tmp/cct89ukB.s:695    .text:00000000000004bc .L0 
-     /tmp/cct89ukB.s:746    .text:00000000000004f0 .L0 
-     /tmp/cct89ukB.s:715    .rodata.str1.8:00000000000000a0 .LC13
-     /tmp/cct89ukB.s:752    .text:0000000000000504 .L0 
-     /tmp/cct89ukB.s:758    .text:0000000000000518 .L0 
-     /tmp/cct89ukB.s:718    .rodata.str1.8:00000000000000b8 .LC14
-     /tmp/cct89ukB.s:764    .text:000000000000052c .L0 
-     /tmp/cct89ukB.s:770    .text:0000000000000540 .L0 
-     /tmp/cct89ukB.s:721    .rodata.str1.8:00000000000000d0 .LC15
-     /tmp/cct89ukB.s:776    .text:0000000000000554 .L0 
-     /tmp/cct89ukB.s:782    .text:0000000000000568 .L0 
-     /tmp/cct89ukB.s:724    .rodata.str1.8:00000000000000e8 .LC16
-     /tmp/cct89ukB.s:788    .text:000000000000057c .L0 
-     /tmp/cct89ukB.s:801    .text:0000000000000598 .L0 
-     /tmp/cct89ukB.s:805    .text:00000000000005a4 .L0 
-     /tmp/cct89ukB.s:809    .text:00000000000005b0 .L0 
-     /tmp/cct89ukB.s:813    .text:00000000000005bc .L0 
-     /tmp/cct89ukB.s:53     .text:0000000000000050 .L1
-     /tmp/cct89ukB.s:70     .text:0000000000000068 .L6
-GAS LISTING /tmp/cct89ukB.s 			page 29
+     /tmp/ccSyd2t1.s:85     .rodata.str1.8:0000000000000008 .LC1
+     /tmp/ccSyd2t1.s:137    .text:00000000000000b8 .L0 
+     /tmp/ccSyd2t1.s:88     .rodata.str1.8:0000000000000010 .LC2
+     /tmp/ccSyd2t1.s:152    .text:00000000000000d8 .L0 
+     /tmp/ccSyd2t1.s:91     .rodata.str1.8:0000000000000020 .LC3
+     /tmp/ccSyd2t1.s:175    .text:0000000000000104 .L0 
+     /tmp/ccSyd2t1.s:188    .text:0000000000000128 .L0 
+     /tmp/ccSyd2t1.s:195    .text:000000000000013c .L0 
+     /tmp/ccSyd2t1.s:207    .text:0000000000000160 .L0 
+     /tmp/ccSyd2t1.s:94     .rodata.str1.8:0000000000000030 .LC4
+     /tmp/ccSyd2t1.s:222    .text:0000000000000180 .L0 
+     /tmp/ccSyd2t1.s:228    .text:0000000000000194 .L0 
+     /tmp/ccSyd2t1.s:253    .rodata.str1.8:0000000000000040 .LC5
+     /tmp/ccSyd2t1.s:296    .text:00000000000001dc .L0 
+     /tmp/ccSyd2t1.s:308    .text:0000000000000200 .L0 
+     /tmp/ccSyd2t1.s:256    .rodata.str1.8:0000000000000048 .LC6
+     /tmp/ccSyd2t1.s:323    .text:0000000000000220 .L0 
+     /tmp/ccSyd2t1.s:259    .rodata.str1.8:0000000000000058 .LC7
+     /tmp/ccSyd2t1.s:348    .text:0000000000000240 .L0 
+     /tmp/ccSyd2t1.s:360    .text:0000000000000264 .L0 
+     /tmp/ccSyd2t1.s:262    .rodata.str1.8:0000000000000060 .LC8
+     /tmp/ccSyd2t1.s:372    .text:0000000000000284 .L0 
+     /tmp/ccSyd2t1.s:385    .text:00000000000002a8 .L0 
+     /tmp/ccSyd2t1.s:392    .text:00000000000002bc .L0 
+     /tmp/ccSyd2t1.s:404    .text:00000000000002e0 .L0 
+     /tmp/ccSyd2t1.s:265    .rodata.str1.8:0000000000000070 .LC9
+     /tmp/ccSyd2t1.s:419    .text:0000000000000300 .L0 
+     /tmp/ccSyd2t1.s:425    .text:0000000000000314 .L0 
+     /tmp/ccSyd2t1.s:450    .rodata.str1.8:0000000000000080 .LC10
+     /tmp/ccSyd2t1.s:529    .text:0000000000000398 .L0 
+     /tmp/ccSyd2t1.s:541    .text:00000000000003bc .L0 
+     /tmp/ccSyd2t1.s:453    .rodata.str1.8:0000000000000088 .LC11
+     /tmp/ccSyd2t1.s:556    .text:00000000000003d4 .L0 
+     /tmp/ccSyd2t1.s:562    .text:00000000000003e8 .L0 
+     /tmp/ccSyd2t1.s:586    .rodata.str1.8:0000000000000098 .LC12
+     /tmp/ccSyd2t1.s:662    .text:000000000000046c .L0 
+     /tmp/ccSyd2t1.s:674    .text:0000000000000490 .L0 
+     /tmp/ccSyd2t1.s:689    .text:00000000000004a8 .L0 
+     /tmp/ccSyd2t1.s:695    .text:00000000000004bc .L0 
+     /tmp/ccSyd2t1.s:746    .text:00000000000004f0 .L0 
+     /tmp/ccSyd2t1.s:715    .rodata.str1.8:00000000000000a0 .LC13
+     /tmp/ccSyd2t1.s:752    .text:0000000000000504 .L0 
+     /tmp/ccSyd2t1.s:758    .text:0000000000000518 .L0 
+     /tmp/ccSyd2t1.s:718    .rodata.str1.8:00000000000000b8 .LC14
+     /tmp/ccSyd2t1.s:764    .text:000000000000052c .L0 
+     /tmp/ccSyd2t1.s:770    .text:0000000000000540 .L0 
+     /tmp/ccSyd2t1.s:721    .rodata.str1.8:00000000000000d0 .LC15
+     /tmp/ccSyd2t1.s:776    .text:0000000000000554 .L0 
+     /tmp/ccSyd2t1.s:782    .text:0000000000000568 .L0 
+     /tmp/ccSyd2t1.s:724    .rodata.str1.8:00000000000000e8 .LC16
+     /tmp/ccSyd2t1.s:788    .text:000000000000057c .L0 
+     /tmp/ccSyd2t1.s:801    .text:0000000000000598 .L0 
+     /tmp/ccSyd2t1.s:805    .text:00000000000005a4 .L0 
+     /tmp/ccSyd2t1.s:809    .text:00000000000005b0 .L0 
+     /tmp/ccSyd2t1.s:813    .text:00000000000005bc .L0 
+     /tmp/ccSyd2t1.s:53     .text:0000000000000050 .L1
+     /tmp/ccSyd2t1.s:70     .text:0000000000000068 .L6
+GAS LISTING /tmp/ccSyd2t1.s 			page 29
 
 
-     /tmp/cct89ukB.s:40     .text:0000000000000030 .L3
-     /tmp/cct89ukB.s:145    .text:00000000000000d0 .L9
-     /tmp/cct89ukB.s:122    .text:0000000000000094 .L13
-     /tmp/cct89ukB.s:215    .text:0000000000000178 .L11
-     /tmp/cct89ukB.s:192    .text:000000000000013c .L14
-     /tmp/cct89ukB.s:316    .text:0000000000000218 .L17
-     /tmp/cct89ukB.s:293    .text:00000000000001dc .L21
-     /tmp/cct89ukB.s:412    .text:00000000000002f8 .L19
-     /tmp/cct89ukB.s:389    .text:00000000000002bc .L22
-     /tmp/cct89ukB.s:522    .text:0000000000000390 .L29
-     /tmp/cct89ukB.s:514    .text:000000000000038c .L25
-     /tmp/cct89ukB.s:482    .text:000000000000035c .L26
-     /tmp/cct89ukB.s:503    .text:0000000000000378 .L27
-     /tmp/cct89ukB.s:550    .text:00000000000003d4 .L24
-     /tmp/cct89ukB.s:494    .text:0000000000000368 .L28
-     /tmp/cct89ukB.s:655    .text:0000000000000464 .L37
-     /tmp/cct89ukB.s:647    .text:0000000000000460 .L33
-     /tmp/cct89ukB.s:615    .text:0000000000000430 .L34
-     /tmp/cct89ukB.s:636    .text:000000000000044c .L35
-     /tmp/cct89ukB.s:683    .text:00000000000004a8 .L32
-     /tmp/cct89ukB.s:627    .text:000000000000043c .L36
-     /tmp/cct89ukB.s:797    .text:0000000000000598 .L41
-     /tmp/cct89ukB.s:792    .text:0000000000000590 .L40
-     /tmp/cct89ukB.s:1947   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-     /tmp/cct89ukB.s:2610   .debug_str:000000000000001a .LASF38
-     /tmp/cct89ukB.s:2616   .debug_str:00000000000000ff .LASF39
-     /tmp/cct89ukB.s:2684   .debug_str:00000000000002f4 .LASF40
-     /tmp/cct89ukB.s:8      .text:0000000000000000 .Ltext0
-     /tmp/cct89ukB.s:846    .text:00000000000005d8 .Letext0
-     /tmp/cct89ukB.s:2604   .debug_line:0000000000000000 .Ldebug_line0
-     /tmp/cct89ukB.s:2650   .debug_str:0000000000000229 .LASF0
-     /tmp/cct89ukB.s:2640   .debug_str:00000000000001c8 .LASF1
-     /tmp/cct89ukB.s:2636   .debug_str:00000000000001a8 .LASF2
-     /tmp/cct89ukB.s:2686   .debug_str:000000000000031f .LASF3
-     /tmp/cct89ukB.s:2618   .debug_str:000000000000011b .LASF4
-     /tmp/cct89ukB.s:2638   .debug_str:00000000000001b6 .LASF5
-     /tmp/cct89ukB.s:2608   .debug_str:0000000000000013 .LASF6
-     /tmp/cct89ukB.s:2606   .debug_str:0000000000000000 .LASF7
-     /tmp/cct89ukB.s:2630   .debug_str:0000000000000173 .LASF8
-     /tmp/cct89ukB.s:2656   .debug_str:0000000000000249 .LASF9
-     /tmp/cct89ukB.s:2614   .debug_str:00000000000000f1 .LASF10
-     /tmp/cct89ukB.s:2694   .debug_str:000000000000034b .LASF11
-     /tmp/cct89ukB.s:2632   .debug_str:0000000000000186 .LASF12
-     /tmp/cct89ukB.s:2688   .debug_str:0000000000000325 .LASF13
-     /tmp/cct89ukB.s:2666   .debug_str:0000000000000290 .LASF14
-     /tmp/cct89ukB.s:2644   .debug_str:00000000000001e9 .LASF15
-     /tmp/cct89ukB.s:2626   .debug_str:0000000000000148 .LASF16
-     /tmp/cct89ukB.s:2660   .debug_str:0000000000000265 .LASF17
-     /tmp/cct89ukB.s:2682   .debug_str:00000000000002ec .LASF41
-     /tmp/cct89ukB.s:2662   .debug_str:000000000000027b .LASF18
-     /tmp/cct89ukB.s:2668   .debug_str:00000000000002a0 .LASF19
-     /tmp/cct89ukB.s:2620   .debug_str:0000000000000122 .LASF20
-     /tmp/cct89ukB.s:2670   .debug_str:00000000000002aa .LASF21
-     /tmp/cct89ukB.s:2672   .debug_str:00000000000002b4 .LASF22
-     /tmp/cct89ukB.s:2674   .debug_str:00000000000002be .LASF23
-     /tmp/cct89ukB.s:2612   .debug_str:00000000000000de .LASF42
-     /tmp/cct89ukB.s:2622   .debug_str:0000000000000127 .LASF43
-GAS LISTING /tmp/cct89ukB.s 			page 30
+     /tmp/ccSyd2t1.s:40     .text:0000000000000030 .L3
+     /tmp/ccSyd2t1.s:145    .text:00000000000000d0 .L9
+     /tmp/ccSyd2t1.s:122    .text:0000000000000094 .L13
+     /tmp/ccSyd2t1.s:215    .text:0000000000000178 .L11
+     /tmp/ccSyd2t1.s:192    .text:000000000000013c .L14
+     /tmp/ccSyd2t1.s:316    .text:0000000000000218 .L17
+     /tmp/ccSyd2t1.s:293    .text:00000000000001dc .L21
+     /tmp/ccSyd2t1.s:412    .text:00000000000002f8 .L19
+     /tmp/ccSyd2t1.s:389    .text:00000000000002bc .L22
+     /tmp/ccSyd2t1.s:522    .text:0000000000000390 .L29
+     /tmp/ccSyd2t1.s:514    .text:000000000000038c .L25
+     /tmp/ccSyd2t1.s:482    .text:000000000000035c .L26
+     /tmp/ccSyd2t1.s:503    .text:0000000000000378 .L27
+     /tmp/ccSyd2t1.s:550    .text:00000000000003d4 .L24
+     /tmp/ccSyd2t1.s:494    .text:0000000000000368 .L28
+     /tmp/ccSyd2t1.s:655    .text:0000000000000464 .L37
+     /tmp/ccSyd2t1.s:647    .text:0000000000000460 .L33
+     /tmp/ccSyd2t1.s:615    .text:0000000000000430 .L34
+     /tmp/ccSyd2t1.s:636    .text:000000000000044c .L35
+     /tmp/ccSyd2t1.s:683    .text:00000000000004a8 .L32
+     /tmp/ccSyd2t1.s:627    .text:000000000000043c .L36
+     /tmp/ccSyd2t1.s:797    .text:0000000000000598 .L41
+     /tmp/ccSyd2t1.s:792    .text:0000000000000590 .L40
+     /tmp/ccSyd2t1.s:1947   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+     /tmp/ccSyd2t1.s:2610   .debug_str:000000000000001a .LASF38
+     /tmp/ccSyd2t1.s:2616   .debug_str:00000000000000ff .LASF39
+     /tmp/ccSyd2t1.s:2684   .debug_str:00000000000002f4 .LASF40
+     /tmp/ccSyd2t1.s:8      .text:0000000000000000 .Ltext0
+     /tmp/ccSyd2t1.s:846    .text:00000000000005d8 .Letext0
+     /tmp/ccSyd2t1.s:2604   .debug_line:0000000000000000 .Ldebug_line0
+     /tmp/ccSyd2t1.s:2650   .debug_str:0000000000000229 .LASF0
+     /tmp/ccSyd2t1.s:2640   .debug_str:00000000000001c8 .LASF1
+     /tmp/ccSyd2t1.s:2636   .debug_str:00000000000001a8 .LASF2
+     /tmp/ccSyd2t1.s:2686   .debug_str:000000000000031f .LASF3
+     /tmp/ccSyd2t1.s:2618   .debug_str:000000000000011b .LASF4
+     /tmp/ccSyd2t1.s:2638   .debug_str:00000000000001b6 .LASF5
+     /tmp/ccSyd2t1.s:2608   .debug_str:0000000000000013 .LASF6
+     /tmp/ccSyd2t1.s:2606   .debug_str:0000000000000000 .LASF7
+     /tmp/ccSyd2t1.s:2630   .debug_str:0000000000000173 .LASF8
+     /tmp/ccSyd2t1.s:2656   .debug_str:0000000000000249 .LASF9
+     /tmp/ccSyd2t1.s:2614   .debug_str:00000000000000f1 .LASF10
+     /tmp/ccSyd2t1.s:2694   .debug_str:000000000000034b .LASF11
+     /tmp/ccSyd2t1.s:2632   .debug_str:0000000000000186 .LASF12
+     /tmp/ccSyd2t1.s:2688   .debug_str:0000000000000325 .LASF13
+     /tmp/ccSyd2t1.s:2666   .debug_str:0000000000000290 .LASF14
+     /tmp/ccSyd2t1.s:2644   .debug_str:00000000000001e9 .LASF15
+     /tmp/ccSyd2t1.s:2626   .debug_str:0000000000000148 .LASF16
+     /tmp/ccSyd2t1.s:2660   .debug_str:0000000000000265 .LASF17
+     /tmp/ccSyd2t1.s:2682   .debug_str:00000000000002ec .LASF41
+     /tmp/ccSyd2t1.s:2662   .debug_str:000000000000027b .LASF18
+     /tmp/ccSyd2t1.s:2668   .debug_str:00000000000002a0 .LASF19
+     /tmp/ccSyd2t1.s:2620   .debug_str:0000000000000122 .LASF20
+     /tmp/ccSyd2t1.s:2670   .debug_str:00000000000002aa .LASF21
+     /tmp/ccSyd2t1.s:2672   .debug_str:00000000000002b4 .LASF22
+     /tmp/ccSyd2t1.s:2674   .debug_str:00000000000002be .LASF23
+     /tmp/ccSyd2t1.s:2612   .debug_str:00000000000000de .LASF42
+     /tmp/ccSyd2t1.s:2622   .debug_str:0000000000000127 .LASF43
+GAS LISTING /tmp/ccSyd2t1.s 			page 30
 
 
-     /tmp/cct89ukB.s:731    .text:00000000000004dc .LFB13
-     /tmp/cct89ukB.s:826    .text:00000000000005d8 .LFE13
-     /tmp/cct89ukB.s:2678   .debug_str:00000000000002d8 .LASF24
-     /tmp/cct89ukB.s:749    .text:0000000000000504 .LVL92
-     /tmp/cct89ukB.s:754    .text:0000000000000514 .LVL93
-     /tmp/cct89ukB.s:761    .text:000000000000052c .LVL94
-     /tmp/cct89ukB.s:766    .text:000000000000053c .LVL95
-     /tmp/cct89ukB.s:773    .text:0000000000000554 .LVL96
-     /tmp/cct89ukB.s:778    .text:0000000000000564 .LVL97
-     /tmp/cct89ukB.s:785    .text:000000000000057c .LVL98
-     /tmp/cct89ukB.s:790    .text:000000000000058c .LVL99
-     /tmp/cct89ukB.s:796    .text:0000000000000598 .LVL100
-     /tmp/cct89ukB.s:2658   .debug_str:0000000000000259 .LASF26
-     /tmp/cct89ukB.s:100    .text:0000000000000074 .LFB12
-     /tmp/cct89ukB.s:249    .text:00000000000001bc .LFE12
-     /tmp/cct89ukB.s:2359   .debug_loc:0000000000000000 .LLST1
-     /tmp/cct89ukB.s:2373   .debug_loc:0000000000000039 .LLST2
-     /tmp/cct89ukB.s:2652   .debug_str:0000000000000236 .LASF25
-     /tmp/cct89ukB.s:2393   .debug_loc:0000000000000096 .LLST3
-     /tmp/cct89ukB.s:127    .text:00000000000000a4 .LVL10
-     /tmp/cct89ukB.s:134    .text:00000000000000b8 .LVL11
-     /tmp/cct89ukB.s:139    .text:00000000000000c8 .LVL12
-     /tmp/cct89ukB.s:154    .text:00000000000000e8 .LVL15
-     /tmp/cct89ukB.s:165    .text:00000000000000f4 .LVL16
-     /tmp/cct89ukB.s:170    .text:0000000000000100 .LVL17
-     /tmp/cct89ukB.s:178    .text:0000000000000114 .LVL20
-     /tmp/cct89ukB.s:185    .text:0000000000000128 .LVL21
-     /tmp/cct89ukB.s:190    .text:0000000000000138 .LVL22
-     /tmp/cct89ukB.s:197    .text:000000000000014c .LVL23
-     /tmp/cct89ukB.s:204    .text:0000000000000160 .LVL24
-     /tmp/cct89ukB.s:209    .text:0000000000000170 .LVL25
-     /tmp/cct89ukB.s:224    .text:0000000000000190 .LVL28
-     /tmp/cct89ukB.s:232    .text:00000000000001a4 .LVL29
-     /tmp/cct89ukB.s:2654   .debug_str:000000000000023d .LASF27
-     /tmp/cct89ukB.s:271    .text:00000000000001bc .LFB11
-     /tmp/cct89ukB.s:446    .text:000000000000033c .LFE11
-     /tmp/cct89ukB.s:2404   .debug_loc:00000000000000cc .LLST4
-     /tmp/cct89ukB.s:2418   .debug_loc:0000000000000105 .LLST5
-     /tmp/cct89ukB.s:2438   .debug_loc:0000000000000162 .LLST6
-     /tmp/cct89ukB.s:2446   .debug_loc:0000000000000186 .LLST7
-     /tmp/cct89ukB.s:298    .text:00000000000001ec .LVL35
-     /tmp/cct89ukB.s:305    .text:0000000000000200 .LVL36
-     /tmp/cct89ukB.s:310    .text:0000000000000210 .LVL37
-     /tmp/cct89ukB.s:325    .text:0000000000000230 .LVL40
-     /tmp/cct89ukB.s:336    .text:000000000000023c .LVL41
-     /tmp/cct89ukB.s:350    .text:0000000000000250 .LVL43
-     /tmp/cct89ukB.s:357    .text:0000000000000264 .LVL44
-     /tmp/cct89ukB.s:362    .text:0000000000000274 .LVL45
-     /tmp/cct89ukB.s:367    .text:0000000000000280 .LVL46
-     /tmp/cct89ukB.s:375    .text:0000000000000294 .LVL49
-     /tmp/cct89ukB.s:382    .text:00000000000002a8 .LVL50
-     /tmp/cct89ukB.s:387    .text:00000000000002b8 .LVL51
-     /tmp/cct89ukB.s:394    .text:00000000000002cc .LVL52
-     /tmp/cct89ukB.s:401    .text:00000000000002e0 .LVL53
-     /tmp/cct89ukB.s:406    .text:00000000000002f0 .LVL54
-     /tmp/cct89ukB.s:421    .text:0000000000000310 .LVL57
-     /tmp/cct89ukB.s:429    .text:0000000000000324 .LVL58
-GAS LISTING /tmp/cct89ukB.s 			page 31
+     /tmp/ccSyd2t1.s:731    .text:00000000000004dc .LFB13
+     /tmp/ccSyd2t1.s:826    .text:00000000000005d8 .LFE13
+     /tmp/ccSyd2t1.s:2678   .debug_str:00000000000002d8 .LASF24
+     /tmp/ccSyd2t1.s:749    .text:0000000000000504 .LVL92
+     /tmp/ccSyd2t1.s:754    .text:0000000000000514 .LVL93
+     /tmp/ccSyd2t1.s:761    .text:000000000000052c .LVL94
+     /tmp/ccSyd2t1.s:766    .text:000000000000053c .LVL95
+     /tmp/ccSyd2t1.s:773    .text:0000000000000554 .LVL96
+     /tmp/ccSyd2t1.s:778    .text:0000000000000564 .LVL97
+     /tmp/ccSyd2t1.s:785    .text:000000000000057c .LVL98
+     /tmp/ccSyd2t1.s:790    .text:000000000000058c .LVL99
+     /tmp/ccSyd2t1.s:796    .text:0000000000000598 .LVL100
+     /tmp/ccSyd2t1.s:2658   .debug_str:0000000000000259 .LASF26
+     /tmp/ccSyd2t1.s:100    .text:0000000000000074 .LFB12
+     /tmp/ccSyd2t1.s:249    .text:00000000000001bc .LFE12
+     /tmp/ccSyd2t1.s:2359   .debug_loc:0000000000000000 .LLST1
+     /tmp/ccSyd2t1.s:2373   .debug_loc:0000000000000039 .LLST2
+     /tmp/ccSyd2t1.s:2652   .debug_str:0000000000000236 .LASF25
+     /tmp/ccSyd2t1.s:2393   .debug_loc:0000000000000096 .LLST3
+     /tmp/ccSyd2t1.s:127    .text:00000000000000a4 .LVL10
+     /tmp/ccSyd2t1.s:134    .text:00000000000000b8 .LVL11
+     /tmp/ccSyd2t1.s:139    .text:00000000000000c8 .LVL12
+     /tmp/ccSyd2t1.s:154    .text:00000000000000e8 .LVL15
+     /tmp/ccSyd2t1.s:165    .text:00000000000000f4 .LVL16
+     /tmp/ccSyd2t1.s:170    .text:0000000000000100 .LVL17
+     /tmp/ccSyd2t1.s:178    .text:0000000000000114 .LVL20
+     /tmp/ccSyd2t1.s:185    .text:0000000000000128 .LVL21
+     /tmp/ccSyd2t1.s:190    .text:0000000000000138 .LVL22
+     /tmp/ccSyd2t1.s:197    .text:000000000000014c .LVL23
+     /tmp/ccSyd2t1.s:204    .text:0000000000000160 .LVL24
+     /tmp/ccSyd2t1.s:209    .text:0000000000000170 .LVL25
+     /tmp/ccSyd2t1.s:224    .text:0000000000000190 .LVL28
+     /tmp/ccSyd2t1.s:232    .text:00000000000001a4 .LVL29
+     /tmp/ccSyd2t1.s:2654   .debug_str:000000000000023d .LASF27
+     /tmp/ccSyd2t1.s:271    .text:00000000000001bc .LFB11
+     /tmp/ccSyd2t1.s:446    .text:000000000000033c .LFE11
+     /tmp/ccSyd2t1.s:2404   .debug_loc:00000000000000cc .LLST4
+     /tmp/ccSyd2t1.s:2418   .debug_loc:0000000000000105 .LLST5
+     /tmp/ccSyd2t1.s:2438   .debug_loc:0000000000000162 .LLST6
+     /tmp/ccSyd2t1.s:2446   .debug_loc:0000000000000186 .LLST7
+     /tmp/ccSyd2t1.s:298    .text:00000000000001ec .LVL35
+     /tmp/ccSyd2t1.s:305    .text:0000000000000200 .LVL36
+     /tmp/ccSyd2t1.s:310    .text:0000000000000210 .LVL37
+     /tmp/ccSyd2t1.s:325    .text:0000000000000230 .LVL40
+     /tmp/ccSyd2t1.s:336    .text:000000000000023c .LVL41
+     /tmp/ccSyd2t1.s:350    .text:0000000000000250 .LVL43
+     /tmp/ccSyd2t1.s:357    .text:0000000000000264 .LVL44
+     /tmp/ccSyd2t1.s:362    .text:0000000000000274 .LVL45
+     /tmp/ccSyd2t1.s:367    .text:0000000000000280 .LVL46
+     /tmp/ccSyd2t1.s:375    .text:0000000000000294 .LVL49
+     /tmp/ccSyd2t1.s:382    .text:00000000000002a8 .LVL50
+     /tmp/ccSyd2t1.s:387    .text:00000000000002b8 .LVL51
+     /tmp/ccSyd2t1.s:394    .text:00000000000002cc .LVL52
+     /tmp/ccSyd2t1.s:401    .text:00000000000002e0 .LVL53
+     /tmp/ccSyd2t1.s:406    .text:00000000000002f0 .LVL54
+     /tmp/ccSyd2t1.s:421    .text:0000000000000310 .LVL57
+     /tmp/ccSyd2t1.s:429    .text:0000000000000324 .LVL58
+GAS LISTING /tmp/ccSyd2t1.s 			page 31
 
 
-     /tmp/cct89ukB.s:2680   .debug_str:00000000000002e0 .LASF28
-     /tmp/cct89ukB.s:459    .text:000000000000033c .LFB10
-     /tmp/cct89ukB.s:582    .text:0000000000000410 .LFE10
-     /tmp/cct89ukB.s:2457   .debug_loc:00000000000001bc .LLST8
-     /tmp/cct89ukB.s:477    .text:0000000000000354 .LBB2
-     /tmp/cct89ukB.s:553    .text:00000000000003d4 .LBE2
-     /tmp/cct89ukB.s:2471   .debug_loc:00000000000001f5 .LLST9
-     /tmp/cct89ukB.s:2590   .debug_ranges:0000000000000000 .Ldebug_ranges0
-     /tmp/cct89ukB.s:2483   .debug_loc:000000000000022c .LLST10
-     /tmp/cct89ukB.s:500    .text:0000000000000374 .LBB6
-     /tmp/cct89ukB.s:515    .text:000000000000038c .LBE6
-     /tmp/cct89ukB.s:2495   .debug_loc:0000000000000263 .LLST11
-     /tmp/cct89ukB.s:489    .text:0000000000000364 .LVL64
-     /tmp/cct89ukB.s:531    .text:00000000000003a8 .LVL70
-     /tmp/cct89ukB.s:538    .text:00000000000003bc .LVL71
-     /tmp/cct89ukB.s:543    .text:00000000000003cc .LVL72
-     /tmp/cct89ukB.s:558    .text:00000000000003e4 .LVL74
-     /tmp/cct89ukB.s:566    .text:00000000000003f8 .LVL75
-     /tmp/cct89ukB.s:2664   .debug_str:0000000000000284 .LASF29
-     /tmp/cct89ukB.s:592    .text:0000000000000410 .LFB9
-     /tmp/cct89ukB.s:711    .text:00000000000004dc .LFE9
-     /tmp/cct89ukB.s:2506   .debug_loc:0000000000000299 .LLST12
-     /tmp/cct89ukB.s:610    .text:0000000000000428 .LBB10
-     /tmp/cct89ukB.s:686    .text:00000000000004a8 .LBE10
-     /tmp/cct89ukB.s:2520   .debug_loc:00000000000002d2 .LLST13
-     /tmp/cct89ukB.s:2532   .debug_loc:0000000000000309 .LLST14
-     /tmp/cct89ukB.s:633    .text:0000000000000448 .LBB14
-     /tmp/cct89ukB.s:648    .text:0000000000000460 .LBE14
-     /tmp/cct89ukB.s:2544   .debug_loc:0000000000000340 .LLST15
-     /tmp/cct89ukB.s:622    .text:0000000000000438 .LVL80
-     /tmp/cct89ukB.s:664    .text:000000000000047c .LVL86
-     /tmp/cct89ukB.s:671    .text:0000000000000490 .LVL87
-     /tmp/cct89ukB.s:676    .text:00000000000004a0 .LVL88
-     /tmp/cct89ukB.s:691    .text:00000000000004b8 .LVL90
-     /tmp/cct89ukB.s:2690   .debug_str:0000000000000335 .LASF44
-     /tmp/cct89ukB.s:12     .text:0000000000000000 .LFB8
-     /tmp/cct89ukB.s:78     .text:0000000000000074 .LFE8
-     /tmp/cct89ukB.s:2555   .debug_loc:0000000000000376 .LLST0
-     /tmp/cct89ukB.s:45     .text:000000000000003c .LVL2
-     /tmp/cct89ukB.s:50     .text:000000000000004c .LVL3
-     /tmp/cct89ukB.s:75     .text:0000000000000070 .LVL6
-     /tmp/cct89ukB.s:2646   .debug_str:00000000000001f5 .LASF30
-     /tmp/cct89ukB.s:2642   .debug_str:00000000000001db .LASF32
-     /tmp/cct89ukB.s:2634   .debug_str:0000000000000195 .LASF31
-     /tmp/cct89ukB.s:2692   .debug_str:000000000000033f .LASF33
-     /tmp/cct89ukB.s:2628   .debug_str:000000000000015e .LASF34
-     /tmp/cct89ukB.s:2676   .debug_str:00000000000002c8 .LASF35
-     /tmp/cct89ukB.s:2648   .debug_str:000000000000021a .LASF36
-     /tmp/cct89ukB.s:2624   .debug_str:000000000000013f .LASF37
-     /tmp/cct89ukB.s:103    .text:0000000000000074 .LVL7
-     /tmp/cct89ukB.s:121    .text:0000000000000094 .LVL9
-     /tmp/cct89ukB.s:117    .text:000000000000008c .LVL8
-     /tmp/cct89ukB.s:142    .text:00000000000000cc .LVL13
-     /tmp/cct89ukB.s:144    .text:00000000000000d0 .LVL14
-     /tmp/cct89ukB.s:212    .text:0000000000000174 .LVL26
-     /tmp/cct89ukB.s:214    .text:0000000000000178 .LVL27
-     /tmp/cct89ukB.s:241    .text:00000000000001b0 .LVL30
-GAS LISTING /tmp/cct89ukB.s 			page 32
+     /tmp/ccSyd2t1.s:2680   .debug_str:00000000000002e0 .LASF28
+     /tmp/ccSyd2t1.s:459    .text:000000000000033c .LFB10
+     /tmp/ccSyd2t1.s:582    .text:0000000000000410 .LFE10
+     /tmp/ccSyd2t1.s:2457   .debug_loc:00000000000001bc .LLST8
+     /tmp/ccSyd2t1.s:477    .text:0000000000000354 .LBB2
+     /tmp/ccSyd2t1.s:553    .text:00000000000003d4 .LBE2
+     /tmp/ccSyd2t1.s:2471   .debug_loc:00000000000001f5 .LLST9
+     /tmp/ccSyd2t1.s:2590   .debug_ranges:0000000000000000 .Ldebug_ranges0
+     /tmp/ccSyd2t1.s:2483   .debug_loc:000000000000022c .LLST10
+     /tmp/ccSyd2t1.s:500    .text:0000000000000374 .LBB6
+     /tmp/ccSyd2t1.s:515    .text:000000000000038c .LBE6
+     /tmp/ccSyd2t1.s:2495   .debug_loc:0000000000000263 .LLST11
+     /tmp/ccSyd2t1.s:489    .text:0000000000000364 .LVL64
+     /tmp/ccSyd2t1.s:531    .text:00000000000003a8 .LVL70
+     /tmp/ccSyd2t1.s:538    .text:00000000000003bc .LVL71
+     /tmp/ccSyd2t1.s:543    .text:00000000000003cc .LVL72
+     /tmp/ccSyd2t1.s:558    .text:00000000000003e4 .LVL74
+     /tmp/ccSyd2t1.s:566    .text:00000000000003f8 .LVL75
+     /tmp/ccSyd2t1.s:2664   .debug_str:0000000000000284 .LASF29
+     /tmp/ccSyd2t1.s:592    .text:0000000000000410 .LFB9
+     /tmp/ccSyd2t1.s:711    .text:00000000000004dc .LFE9
+     /tmp/ccSyd2t1.s:2506   .debug_loc:0000000000000299 .LLST12
+     /tmp/ccSyd2t1.s:610    .text:0000000000000428 .LBB10
+     /tmp/ccSyd2t1.s:686    .text:00000000000004a8 .LBE10
+     /tmp/ccSyd2t1.s:2520   .debug_loc:00000000000002d2 .LLST13
+     /tmp/ccSyd2t1.s:2532   .debug_loc:0000000000000309 .LLST14
+     /tmp/ccSyd2t1.s:633    .text:0000000000000448 .LBB14
+     /tmp/ccSyd2t1.s:648    .text:0000000000000460 .LBE14
+     /tmp/ccSyd2t1.s:2544   .debug_loc:0000000000000340 .LLST15
+     /tmp/ccSyd2t1.s:622    .text:0000000000000438 .LVL80
+     /tmp/ccSyd2t1.s:664    .text:000000000000047c .LVL86
+     /tmp/ccSyd2t1.s:671    .text:0000000000000490 .LVL87
+     /tmp/ccSyd2t1.s:676    .text:00000000000004a0 .LVL88
+     /tmp/ccSyd2t1.s:691    .text:00000000000004b8 .LVL90
+     /tmp/ccSyd2t1.s:2690   .debug_str:0000000000000335 .LASF44
+     /tmp/ccSyd2t1.s:12     .text:0000000000000000 .LFB8
+     /tmp/ccSyd2t1.s:78     .text:0000000000000074 .LFE8
+     /tmp/ccSyd2t1.s:2555   .debug_loc:0000000000000376 .LLST0
+     /tmp/ccSyd2t1.s:45     .text:000000000000003c .LVL2
+     /tmp/ccSyd2t1.s:50     .text:000000000000004c .LVL3
+     /tmp/ccSyd2t1.s:75     .text:0000000000000070 .LVL6
+     /tmp/ccSyd2t1.s:2646   .debug_str:00000000000001f5 .LASF30
+     /tmp/ccSyd2t1.s:2642   .debug_str:00000000000001db .LASF32
+     /tmp/ccSyd2t1.s:2634   .debug_str:0000000000000195 .LASF31
+     /tmp/ccSyd2t1.s:2692   .debug_str:000000000000033f .LASF33
+     /tmp/ccSyd2t1.s:2628   .debug_str:000000000000015e .LASF34
+     /tmp/ccSyd2t1.s:2676   .debug_str:00000000000002c8 .LASF35
+     /tmp/ccSyd2t1.s:2648   .debug_str:000000000000021a .LASF36
+     /tmp/ccSyd2t1.s:2624   .debug_str:000000000000013f .LASF37
+     /tmp/ccSyd2t1.s:103    .text:0000000000000074 .LVL7
+     /tmp/ccSyd2t1.s:121    .text:0000000000000094 .LVL9
+     /tmp/ccSyd2t1.s:117    .text:000000000000008c .LVL8
+     /tmp/ccSyd2t1.s:142    .text:00000000000000cc .LVL13
+     /tmp/ccSyd2t1.s:144    .text:00000000000000d0 .LVL14
+     /tmp/ccSyd2t1.s:212    .text:0000000000000174 .LVL26
+     /tmp/ccSyd2t1.s:214    .text:0000000000000178 .LVL27
+     /tmp/ccSyd2t1.s:241    .text:00000000000001b0 .LVL30
+GAS LISTING /tmp/ccSyd2t1.s 			page 32
 
 
-     /tmp/cct89ukB.s:172    .text:0000000000000104 .LVL18
-     /tmp/cct89ukB.s:176    .text:000000000000010c .LVL19
-     /tmp/cct89ukB.s:244    .text:00000000000001b4 .LVL31
-     /tmp/cct89ukB.s:274    .text:00000000000001bc .LVL32
-     /tmp/cct89ukB.s:292    .text:00000000000001dc .LVL34
-     /tmp/cct89ukB.s:288    .text:00000000000001d4 .LVL33
-     /tmp/cct89ukB.s:313    .text:0000000000000214 .LVL38
-     /tmp/cct89ukB.s:315    .text:0000000000000218 .LVL39
-     /tmp/cct89ukB.s:409    .text:00000000000002f4 .LVL55
-     /tmp/cct89ukB.s:411    .text:00000000000002f8 .LVL56
-     /tmp/cct89ukB.s:438    .text:0000000000000330 .LVL59
-     /tmp/cct89ukB.s:344    .text:0000000000000240 .LVL42
-     /tmp/cct89ukB.s:369    .text:0000000000000284 .LVL47
-     /tmp/cct89ukB.s:373    .text:000000000000028c .LVL48
-     /tmp/cct89ukB.s:441    .text:0000000000000334 .LVL60
-     /tmp/cct89ukB.s:462    .text:000000000000033c .LVL61
-     /tmp/cct89ukB.s:481    .text:000000000000035c .LVL63
-     /tmp/cct89ukB.s:476    .text:0000000000000354 .LVL62
-     /tmp/cct89ukB.s:577    .text:0000000000000408 .LVL76
-     /tmp/cct89ukB.s:521    .text:0000000000000390 .LVL69
-     /tmp/cct89ukB.s:549    .text:00000000000003d4 .LVL73
-     /tmp/cct89ukB.s:504    .text:0000000000000378 .LVL66
-     /tmp/cct89ukB.s:513    .text:000000000000038c .LVL68
-     /tmp/cct89ukB.s:595    .text:0000000000000410 .LVL77
-     /tmp/cct89ukB.s:614    .text:0000000000000430 .LVL79
-     /tmp/cct89ukB.s:609    .text:0000000000000428 .LVL78
-     /tmp/cct89ukB.s:706    .text:00000000000004d4 .LVL91
-     /tmp/cct89ukB.s:654    .text:0000000000000464 .LVL85
-     /tmp/cct89ukB.s:682    .text:00000000000004a8 .LVL89
-     /tmp/cct89ukB.s:637    .text:000000000000044c .LVL82
-     /tmp/cct89ukB.s:646    .text:0000000000000460 .LVL84
-     /tmp/cct89ukB.s:16     .text:0000000000000000 .LVL0
-     /tmp/cct89ukB.s:39     .text:0000000000000030 .LVL1
-     /tmp/cct89ukB.s:63     .text:000000000000005c .LVL4
-     /tmp/cct89ukB.s:69     .text:0000000000000068 .LVL5
-     /tmp/cct89ukB.s:851    .debug_info:0000000000000000 .Ldebug_info0
-     /tmp/cct89ukB.s:484    .text:000000000000035c .LBB4
-     /tmp/cct89ukB.s:517    .text:000000000000038c .LBE4
-     /tmp/cct89ukB.s:545    .text:00000000000003cc .LBB8
-     /tmp/cct89ukB.s:551    .text:00000000000003d4 .LBE8
-     /tmp/cct89ukB.s:617    .text:0000000000000430 .LBB12
-     /tmp/cct89ukB.s:650    .text:0000000000000460 .LBE12
-     /tmp/cct89ukB.s:678    .text:00000000000004a0 .LBB16
-     /tmp/cct89ukB.s:684    .text:00000000000004a8 .LBE16
+     /tmp/ccSyd2t1.s:172    .text:0000000000000104 .LVL18
+     /tmp/ccSyd2t1.s:176    .text:000000000000010c .LVL19
+     /tmp/ccSyd2t1.s:244    .text:00000000000001b4 .LVL31
+     /tmp/ccSyd2t1.s:274    .text:00000000000001bc .LVL32
+     /tmp/ccSyd2t1.s:292    .text:00000000000001dc .LVL34
+     /tmp/ccSyd2t1.s:288    .text:00000000000001d4 .LVL33
+     /tmp/ccSyd2t1.s:313    .text:0000000000000214 .LVL38
+     /tmp/ccSyd2t1.s:315    .text:0000000000000218 .LVL39
+     /tmp/ccSyd2t1.s:409    .text:00000000000002f4 .LVL55
+     /tmp/ccSyd2t1.s:411    .text:00000000000002f8 .LVL56
+     /tmp/ccSyd2t1.s:438    .text:0000000000000330 .LVL59
+     /tmp/ccSyd2t1.s:344    .text:0000000000000240 .LVL42
+     /tmp/ccSyd2t1.s:369    .text:0000000000000284 .LVL47
+     /tmp/ccSyd2t1.s:373    .text:000000000000028c .LVL48
+     /tmp/ccSyd2t1.s:441    .text:0000000000000334 .LVL60
+     /tmp/ccSyd2t1.s:462    .text:000000000000033c .LVL61
+     /tmp/ccSyd2t1.s:481    .text:000000000000035c .LVL63
+     /tmp/ccSyd2t1.s:476    .text:0000000000000354 .LVL62
+     /tmp/ccSyd2t1.s:577    .text:0000000000000408 .LVL76
+     /tmp/ccSyd2t1.s:521    .text:0000000000000390 .LVL69
+     /tmp/ccSyd2t1.s:549    .text:00000000000003d4 .LVL73
+     /tmp/ccSyd2t1.s:504    .text:0000000000000378 .LVL66
+     /tmp/ccSyd2t1.s:513    .text:000000000000038c .LVL68
+     /tmp/ccSyd2t1.s:595    .text:0000000000000410 .LVL77
+     /tmp/ccSyd2t1.s:614    .text:0000000000000430 .LVL79
+     /tmp/ccSyd2t1.s:609    .text:0000000000000428 .LVL78
+     /tmp/ccSyd2t1.s:706    .text:00000000000004d4 .LVL91
+     /tmp/ccSyd2t1.s:654    .text:0000000000000464 .LVL85
+     /tmp/ccSyd2t1.s:682    .text:00000000000004a8 .LVL89
+     /tmp/ccSyd2t1.s:637    .text:000000000000044c .LVL82
+     /tmp/ccSyd2t1.s:646    .text:0000000000000460 .LVL84
+     /tmp/ccSyd2t1.s:16     .text:0000000000000000 .LVL0
+     /tmp/ccSyd2t1.s:39     .text:0000000000000030 .LVL1
+     /tmp/ccSyd2t1.s:63     .text:000000000000005c .LVL4
+     /tmp/ccSyd2t1.s:69     .text:0000000000000068 .LVL5
+     /tmp/ccSyd2t1.s:851    .debug_info:0000000000000000 .Ldebug_info0
+     /tmp/ccSyd2t1.s:484    .text:000000000000035c .LBB4
+     /tmp/ccSyd2t1.s:517    .text:000000000000038c .LBE4
+     /tmp/ccSyd2t1.s:545    .text:00000000000003cc .LBB8
+     /tmp/ccSyd2t1.s:551    .text:00000000000003d4 .LBE8
+     /tmp/ccSyd2t1.s:617    .text:0000000000000430 .LBB12
+     /tmp/ccSyd2t1.s:650    .text:0000000000000460 .LBE12
+     /tmp/ccSyd2t1.s:678    .text:00000000000004a0 .LBB16
+     /tmp/ccSyd2t1.s:684    .text:00000000000004a8 .LBE16
 
 UNDEFINED SYMBOLS
 _Z15thread_dispatchv
