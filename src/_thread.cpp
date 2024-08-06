@@ -6,17 +6,17 @@
 #include "../h/riscv.hpp"
 
 _thread* _thread::running = nullptr;
-
+/*
 void _thread::yield(){
     uint64 fcode = 0x13;
     asm volatile("mv a0, %0" : : "r" (fcode));  //a0 <- 13
     asm volatile("ecall");
 }
-
+*/
 int _thread::create_thread(thread_t* handle, Body body, void* arg, void* stack_space){
 
     *handle = new _thread(body, arg, stack_space);
-    if(*handle != nullptr) return 0;//mozda treba !=nullptr
+    if(*handle != nullptr) return 0;
     return -1;
 }
 
@@ -32,15 +32,16 @@ void _thread::thread_dispatch(){
 
 int _thread::thread_exit() {
     _thread::running->setFinished(true);
-    delete _thread::running;
-    _thread::yield();
-    return 0;
+    if(running->isFinished()) return -1;
+    //delete _thread::running;
+    _thread::thread_dispatch();
+    return 1;
 }
 
 void _thread::threadWrapper() {
     Riscv::popSppSpie();
     running->body(running->arg);
     running->setFinished(true);//kada se sve zavrsi postavi da je kraj
-    _thread::yield();
+    _thread::thread_dispatch();
 }
 

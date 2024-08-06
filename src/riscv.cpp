@@ -42,14 +42,16 @@ void Riscv::interruptRoutineHandler(){
                 break;
                 }
             case 0x12: {
-                _thread::thread_exit();
+                retval = _thread::thread_exit();
+                asm volatile("mv a0, %0" : : "r" (retval));
                 break;
                 }
             case 0x13:
                 _thread::thread_dispatch();
                 break;
             case 0x20:{
-                __getc();
+                char ch = __getc();
+                asm volatile("mv a0, %0" : : "r" (ch));
             }
             default:
                 break;
