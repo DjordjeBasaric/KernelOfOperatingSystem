@@ -14,7 +14,7 @@ public:
 
     void put(_thread *t){ blockedThreads.addLast(t); }
     _thread* get(){ return blockedThreads.removeFirst(); }
-    bool empty(){ return 0 || blockedThreads.peekFirst(); }
+    bool empty(){ return blockedThreads.peekFirst() == nullptr; }
 private:
     List<_thread> blockedThreads;
 };

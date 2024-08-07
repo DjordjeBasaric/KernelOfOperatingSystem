@@ -6,7 +6,7 @@
 #include "../lib/console.h"
 #include "../h/_thread.hpp"
 #include "../test/printing.hpp"
-
+#include "../h/_sem.hpp"
 
 void Riscv::popSppSpie()
 {
@@ -16,12 +16,8 @@ void Riscv::popSppSpie()
 }
 
 void Riscv::interruptRoutineHandler(){
-    uint64 volatile fcode, handle, start_routine, arg;
+    uint64 volatile fcode;
     asm volatile("mv %0, a0" : "=r" (fcode));
-    asm volatile("mv %0, a1" : "=r" (handle));    //thread_t* handle
-    asm volatile("mv %0, a2" : "=r" (start_routine));    //void (*function)(void*)
-    asm volatile("mv %0, a3" : "=r" (arg));
-
     uint64 retval = 0;
 
     //r_scause -> read scause
@@ -35,6 +31,11 @@ void Riscv::interruptRoutineHandler(){
 
         switch(fcode){
             case 0x11: {
+
+                uint64 volatile handle, start_routine, arg;
+                asm volatile("mv %0, a1" : "=r" (handle));    //thread_t* handle
+                asm volatile("mv %0, a2" : "=r" (start_routine));    //void (*function)(void*)
+                asm volatile("mv %0, a3" : "=r" (arg));
                 uint64 *stack_space = new uint64[DEFAULT_STACK_SIZE];
                 retval = _thread::create_thread((thread_t *) handle, (_thread::Body) start_routine, (void *) arg,
                                                 (void *) stack_space);
@@ -49,7 +50,42 @@ void Riscv::interruptRoutineHandler(){
             case 0x13:
                 _thread::thread_dispatch();
                 break;
-            case 0x20:{
+
+            case 0x21:{
+                uint64 handle, init;
+
+                asm volatile("mv %0, a1" : "=r" (handle));
+                asm volatile("mv %0, a2" : "=r" (init));
+                retval = _sem::open_sem((sem_t*)(handle), init);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
+            case 0x22:{
+                uint64 handle;
+                asm volatile("mv %0, a1" : "=r" (handle));
+                retval = _sem::close_sem((sem_t)handle);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
+            case 0x23:{
+                uint64 handle;
+                asm volatile("mv %0, a1" : "=r" (handle));
+                retval = _sem::sem_wait((sem_t)handle);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
+            case 0x24:{
+                uint64 handle;
+                asm volatile("mv %0, a1" : "=r" (handle));
+                retval = _sem::sem_signal((sem_t)handle);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
+            case 0x41:{
                 char ch = __getc();
                 asm volatile("mv a0, %0" : : "r" (ch));
                 break;

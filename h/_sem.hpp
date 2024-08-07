@@ -17,7 +17,7 @@ public:
     static int sem_wait(sem_t id);
     static int sem_signal(sem_t id);
 private:
-    _sem(unsigned v):val(v){ }
+    _sem(unsigned v):val(v){ }//mozda ce trebati new blocked
     unsigned val;
     _semQ blocked;
 };

@@ -37,7 +37,7 @@ int thread_exit(){
 }
 
 char getc(){
-    uint64 const fcode = 0x20;
+    uint64 const fcode = 0x41;
     char ch;
     __asm__ volatile("mv a0, %0" : : "r"(fcode));
     __asm__ volatile("ecall");
@@ -50,5 +50,42 @@ void putc(char c){
 }
 
 int sem_open(sem_t* handle, unsigned init){
+    uint64 const fcode = 0x21;
+    int retval;
+    __asm__ volatile("mv a2, %0" : : "r"(init));
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
+}
 
+int sem_close(sem_t handle){
+    uint64 const fcode = 0x22;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
+}
+
+int sem_wait(sem_t handle){
+    uint64 const fcode = 0x23;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
+}
+
+int sem_signal(sem_t handle){
+    uint64 const fcode = 0x24;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
 }
