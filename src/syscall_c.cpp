@@ -4,8 +4,8 @@
 
 
 #include "../lib/hw.h"
-#include "../h/_thread.hpp"
 #include "../lib/console.h"
+#include "../h/syscall_c.hpp"
 
 int thread_create(thread_t* handle, void(*start_routine)(void*), void* arg){
     uint64 const fcode = 0x11;
@@ -47,4 +47,8 @@ char getc(){
 
 void putc(char c){
     __putc(c);
+}
+
+int sem_open(sem_t* handle, unsigned init){
+
 }

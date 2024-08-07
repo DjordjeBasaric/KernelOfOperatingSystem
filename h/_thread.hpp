@@ -13,17 +13,15 @@ class _thread{
 public:
     static _thread *running;
 
+    using Body = void (*)(void(*)); //pokazivac na funkciju koja nema argumente ni povratnu vrednost
+
     ~_thread() {delete[] stack;}
 
     bool isFinished() const { return finished; }
 
     void setFinished(bool fin) { _thread::finished = fin; }
 
-    using Body = void (*)(void(*)); //pokazivac na funkciju koja nema argumente ni povratnu vrednost
-
     static int create_thread(thread_t* handle, Body body, void* arg, void* stack_space);
-
-    static void yield();
 
     static int thread_exit();
 
@@ -61,6 +59,7 @@ private:
     static void threadWrapper();
 
     friend class Riscv;
+    friend class _sem;
 
 };
 

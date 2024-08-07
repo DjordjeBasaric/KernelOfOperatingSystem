@@ -52,6 +52,7 @@ void Riscv::interruptRoutineHandler(){
             case 0x20:{
                 char ch = __getc();
                 asm volatile("mv a0, %0" : : "r" (ch));
+                break;
             }
             default:
                 break;

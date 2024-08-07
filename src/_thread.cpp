@@ -6,13 +6,7 @@
 #include "../h/riscv.hpp"
 
 _thread* _thread::running = nullptr;
-/*
-void _thread::yield(){
-    uint64 fcode = 0x13;
-    asm volatile("mv a0, %0" : : "r" (fcode));  //a0 <- 13
-    asm volatile("ecall");
-}
-*/
+
 int _thread::create_thread(thread_t* handle, Body body, void* arg, void* stack_space){
 
     *handle = new _thread(body, arg, stack_space);
