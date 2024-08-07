@@ -17,7 +17,7 @@ int _thread::create_thread(thread_t* handle, Body body, void* arg, void* stack_s
 
 void _thread::thread_dispatch(){
     _thread *old = running;
-    if(!old->isFinished()){ Scheduler::put(old);}//ako se menja a nije gotova stavljam u skedzuler
+    if(!old->isFinished() ){ Scheduler::put(old);}//ako se menja a nije gotova stavljam u skedzuler
     running = Scheduler::get();
 
     //trenutni ra cuvam u old->context, a novi ra uzimam iz running->context i stavljam u ra registar

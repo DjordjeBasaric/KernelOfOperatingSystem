@@ -35,7 +35,7 @@ private:
             stack != nullptr ? (uint64) &stack[DEFAULT_STACK_SIZE] : 0
         }),
         arg(arg),
-        finished(false) {
+        finished(false){
         if (body != nullptr) { Scheduler::put(this); } //zbog maina da ne bi opet ubaciovao u skedzuler i ovde i prvi kontekst svicu kad svakako
         }
 

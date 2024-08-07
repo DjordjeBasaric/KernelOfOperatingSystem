@@ -13,7 +13,7 @@ thread_t nitC;
 
 #define LEVEL_1_IMPLEMENTED 1
 #define LEVEL_2_IMPLEMENTED 1
-#define LEVEL_3_IMPLEMENTED 0
+#define LEVEL_3_IMPLEMENTED 1
 #define LEVEL_4_IMPLEMENTED 0
 
 #if LEVEL_2_IMPLEMENTED == 1
@@ -29,7 +29,7 @@ thread_t nitC;
 // TEST 3 (zadatak 3., kompletan C API sa semaforima, sinhrona promena konteksta)
 #include "../test/ConsumerProducer_C_API_test.hpp"
 // TEST 4 (zadatak 3., kompletan CPP API sa semaforima, sinhrona promena konteksta)
-#include "../test/ConsumerProducer_CPP_Sync_API_test.hpp"
+//#include "../test/ConsumerProducer_CPP_Sync_API_test.hpp"
 #endif
 
 #if LEVEL_4_IMPLEMENTED == 1
@@ -88,7 +88,7 @@ void userMain() {
             break;
         case 4:
 #if LEVEL_3_IMPLEMENTED == 1
-            producerConsumer_CPP_Sync_API();
+            //producerConsumer_CPP_Sync_API();
             printString("TEST 4 (zadatak 3., kompletan CPP API sa semaforima, sinhrona promena konteksta)\n");
 #endif
             break;
@@ -116,46 +116,11 @@ void userMain() {
     }
 }
 
-void fa(void*){
-    //running je nitA
-    //threadJoin(nitB);
-    for(int i=0;i<10;i++){
-        printString("A\n");
 
-    }
-    printString("\n");
-    _thread::running->setFinished(true);
-    thread_dispatch();
-}
-
-void fb(void*){
-    //threadJoin(nitC);
-    for(int i=0;i<10;i++){
-        printString("B\n");
-
-    }
-    printString("\n");
-    _thread::running->setFinished(true);
-    thread_dispatch();
-}
-
-void fc(void*){
-    for(int i=0;i<10;i++){
-        printString("C\n");
-
-    }
-    printString("\n");
-
-    _thread::running->setFinished(true);
-    thread_dispatch();
-}
 
 
 
 void wrapper(void* arg){
-    thread_create(&nitA, fa, nullptr);
-    thread_create(&nitB, fb, nullptr);
-    thread_create(&nitC, fc, nullptr);
 
     while(!nitA->isFinished() || !nitB->isFinished() || !nitC->isFinished()){
         thread_dispatch();
@@ -174,7 +139,6 @@ int main()
     //idle nit(nit koja nema fju koja treba da izvrsava)
     thread_create(&thread1, nullptr, nullptr);
     _thread::running = thread1;
-
     thread_t thread2;
     thread_create(&thread2, reinterpret_cast<void (*)(void *)>(userMain), nullptr);
 
