@@ -49,12 +49,22 @@ private:
 
 class Semaphore{
 public:
-    Semaphore(unsigned init=1);
-    virtual ~Semaphore();
+    Semaphore(unsigned init=1){
+        sem_open(&myHandle, init);
+    };
+    virtual ~Semaphore(){
+        sem_close(myHandle);
+    };
 
-    int wait();
-    int signal();
-    int tryWait();
+    int wait(){
+        return sem_wait(myHandle);
+    }
+    int signal(){
+        return sem_signal(myHandle);
+    }
+    int tryWait(){
+        return sem_trywait(myHandle);
+    }
 
 private:
     sem_t myHandle;

@@ -15,6 +15,7 @@ public:
     static int open_sem(sem_t* handle, unsigned init);
     static int close_sem(sem_t id);
     static int sem_wait(sem_t id);
+    static int sem_trywait(sem_t id);
     static int sem_signal(sem_t id);
 private:
     _sem(unsigned v):val(v){ }//mozda ce trebati new blocked

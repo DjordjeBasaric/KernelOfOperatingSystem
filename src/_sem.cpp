@@ -49,3 +49,11 @@ int _sem::sem_wait(sem_t id) {
     else return 0;
 }
 
+int _sem::sem_trywait(sem_t id) {
+    if(id==nullptr) return -1;
+    if (id->val>0) {
+        id->val--;
+        if (id->val > 0) return 0;
+    }
+    return 1;
+}

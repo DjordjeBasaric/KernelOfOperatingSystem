@@ -85,6 +85,14 @@ void Riscv::interruptRoutineHandler(){
 
                 break;
             }
+            case 0x26:{
+                uint64 handle;
+                asm volatile("mv %0, a1" : "=r" (handle));
+                retval = _sem::sem_trywait((sem_t)handle);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
             case 0x41:{
                 char ch = __getc();
                 asm volatile("mv a0, %0" : : "r" (ch));

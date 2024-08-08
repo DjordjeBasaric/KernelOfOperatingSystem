@@ -89,3 +89,13 @@ int sem_signal(sem_t handle){
     asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
     return retval;
 }
+
+int sem_trywait(sem_t handle){
+    uint64 const fcode = 0x26;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
+}
