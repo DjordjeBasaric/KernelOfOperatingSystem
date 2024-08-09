@@ -10,7 +10,7 @@
 struct Mem_Block {
     Mem_Block* next=nullptr;
     Mem_Block* prev=nullptr;
-    size_t size;
+    size_t size=0;
 };
 
 
@@ -30,7 +30,7 @@ public:
     }
 private:
     static Mem_Block* free_Block;
-
+    static void tryToJoin(Mem_Block* current_Block);
     //static Data_Block* used_Block;
 
 
