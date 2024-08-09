@@ -7,6 +7,7 @@
 #include "../h/_thread.hpp"
 #include "../test/printing.hpp"
 #include "../h/_sem.hpp"
+#include "../h/MemoryAllocator.h"
 
 void Riscv::popSppSpie()
 {
@@ -30,6 +31,23 @@ void Riscv::interruptRoutineHandler(){
         uint64 volatile sstatus = r_sstatus();
 
         switch(fcode){
+            case 0x01:{
+                void* ret;
+                size_t size;
+                asm volatile("mv %0, a1" : "=r" (size));
+                ret = MemoryAllocator::mem_alloc(size);
+                asm volatile("mv a0, %0" : : "r" (ret));
+
+                break;
+            }
+            case 0x02:{
+                void* p;
+                asm volatile("mv %0, a1" : "=r" (p));
+                retval = MemoryAllocator::mem_free(p);
+                asm volatile("mv a0, %0" : : "r" (retval));
+
+                break;
+            }
             case 0x11: {
 
                 uint64 volatile handle, start_routine, arg;

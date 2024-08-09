@@ -9,9 +9,9 @@ KERNEL_ASM = kernel.asm
 
 LIBS = \
   ${DIR_LIBS}/hw.lib \
-  ${DIR_LIBS}/mem.lib \
   ${DIR_LIBS}/console.lib
 
+#${DIR_LIBS}/mem.lib \ ovo je izbrisano zbog moje memorije
 # riscv64-unknown-elf- or riscv64-linux-gnu-
 # perhaps in /opt/riscv/bin
 #TOOLPREFIX =

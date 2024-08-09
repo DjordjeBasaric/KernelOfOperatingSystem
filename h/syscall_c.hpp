@@ -9,9 +9,9 @@
 #include "../lib/hw.h"
 #include "scheduler.hpp"
 
-//void* mem_alloc(size_t size);
+void* mem_alloc(size_t size);
 
-//int mem_free(void *p);
+int mem_free(void *p);
 
 class _thread;
 typedef _thread* thread_t;

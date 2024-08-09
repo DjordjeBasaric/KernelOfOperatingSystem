@@ -3,7 +3,7 @@
 
 #include "../h/syscall_cpp.hpp"
 #include "printing.hpp"
-#include "../lib/mem.h"
+#include "../h/MemoryAllocator.h"
 
 class BufferCPP {
 private:

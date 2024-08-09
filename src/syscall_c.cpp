@@ -7,6 +7,29 @@
 #include "../lib/console.h"
 #include "../h/syscall_c.hpp"
 
+
+
+void* mem_alloc(size_t size){
+    uint64 const fcode = 0x01;
+    void* retval;
+    __asm__ volatile("mv a1, %0" : : "r"(size));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+    return retval;
+}
+
+int mem_free(size_t size){
+    uint64 const fcode = 0x02;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(size));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval));
+    return retval;
+
+}
+
 int thread_create(thread_t* handle, void(*start_routine)(void*), void* arg){
     uint64 const fcode = 0x11;
     int retval;

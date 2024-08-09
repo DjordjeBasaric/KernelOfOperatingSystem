@@ -2,6 +2,8 @@
 #include "../h/_thread.hpp"
 #include "../h/syscall_c.hpp"
 #include "../test/printing.hpp"
+#include "../h/MemoryAllocator.h"
+
 
 //#include "../test/userMain.cpp"
 thread_t nitA;
@@ -133,9 +135,11 @@ void wrapper(void* arg){
 
 int main()
 {
+    MemoryAllocator::init_mem();
     Riscv::w_stvec((uint64) &Riscv::interruptRoutine);    //upisuje adresu prekidne rutine
     //Riscv: :ms_sstatus (Riscv:: SSTATUS_SIE);
     thread_t thread1;
+   // mem_alloc(52);
     //idle nit(nit koja nema fju koja treba da izvrsava)
     thread_create(&thread1, nullptr, nullptr);
     _thread::running = thread1;
