@@ -51,5 +51,5 @@ char getc();
 
 void putc(char);
 
-
+void changeMode();
 #endif //PROJECT_BASE_SYSCALL_C_HPP

@@ -24,7 +24,7 @@ thread_t nitC;
 // TEST 2 (zadatak 2., niti CPP API i sinhrona promena konteksta)
 #include "../test/Threads_CPP_API_test.hpp"
 // TEST 7 (zadatak 2., testiranje da li se korisnicki kod izvrsava u korisnickom rezimu)
-//#include "../test/System_Mode_test.hpp"
+#include "../test/System_Mode_test.hpp"
 #endif
 
 #if LEVEL_3_IMPLEMENTED == 1
@@ -108,7 +108,7 @@ void userMain() {
             break;
         case 7:
 #if LEVEL_2_IMPLEMENTED == 1
-            //System_Mode_test();
+            System_Mode_test();
             printString("Test se nije uspesno zavrsio\n");
             printString("TEST 7 (zadatak 2., testiranje da li se korisnicki kod izvrsava u korisnickom rezimu)\n");
 #endif
@@ -137,13 +137,19 @@ int main()
 {
     MemoryAllocator::init_mem();
     Riscv::w_stvec((uint64) &Riscv::interruptRoutine);    //upisuje adresu prekidne rutine
-    //Riscv: :ms_sstatus (Riscv:: SSTATUS_SIE);
+    Riscv::ms_sstatus (Riscv:: SSTATUS_SIE);
+
+
     thread_t thread1;
-   // mem_alloc(52);
+
     //idle nit(nit koja nema fju koja treba da izvrsava)
     thread_create(&thread1, nullptr, nullptr);
     _thread::running = thread1;
+
     thread_t thread2;
+
+    //changeMode();
+
     thread_create(&thread2, reinterpret_cast<void (*)(void *)>(userMain), nullptr);
 
     while (!(thread2->isFinished())) {

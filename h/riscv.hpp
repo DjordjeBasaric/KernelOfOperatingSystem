@@ -13,6 +13,7 @@ class Riscv
 {
 public:
 
+    static void switchToUserMode();
     // pop status.spp and sstatus.spie bits
     static void popSppSpie();
     //implementaciju ove metode stavljam u cpp zato sto je vazno da ova staticka metoda

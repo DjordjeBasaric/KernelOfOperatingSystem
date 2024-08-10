@@ -48,6 +48,14 @@ void Riscv::interruptRoutineHandler(){
 
                 break;
             }
+            case 0x03:{
+
+                mc_sstatus(SSTATUS_SPP);  // postavlja 8. bit na 0 i pali korisnicki rezim
+                w_sepc(sepc);   //na tu adresu se vraca
+
+                return;
+
+            }
             case 0x11: {
 
                 uint64 volatile handle, start_routine, arg;
@@ -153,3 +161,4 @@ void Riscv::interruptRoutineHandler(){
         }
     }
 }
+
