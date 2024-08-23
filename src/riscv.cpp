@@ -9,12 +9,15 @@
 #include "../h/_sem.hpp"
 #include "../h/MemoryAllocator.h"
 
-void Riscv::popSppSpie()
-{
+
+void Riscv::popSppSpie(){
+    mc_sstatus(Riscv::SSTATUS_SPP);
     __asm__ volatile ("csrw sepc, ra"); // zato ovde upisujem da nas vrati tamo odakle je i ova funkcija bila i pozvana i zbog toga ova funckija nije inline
     __asm__ volatile ("sret"); //ovo sret ce vratiti tamo gde je sepc rekao, i to nam ne odgovara
 
 }
+
+
 
 void Riscv::interruptRoutineHandler(){
     uint64 volatile fcode;
@@ -23,13 +26,13 @@ void Riscv::interruptRoutineHandler(){
 
     //r_scause -> read scause
     uint64 scause = r_scause(); // scause -> razlog prekida
+    uint64 volatile sepc = r_sepc();    //prelazak na sledecu instrukciju; jer procesor ponavlja instr koja je izazvala prekid
+    uint64 volatile sstatus = r_sstatus();
 
     if (scause == 0x0000000000000008UL || scause == 0x0000000000000009UL){
         //softverski prekid, sistemski poziv iz koristnickog ili sistemskog rezima
 
-        uint64 volatile sepc = r_sepc() + 4;    //prelazak na sledecu instrukciju; jer procesor ponavlja instr koja je izazvala prekid
-        uint64 volatile sstatus = r_sstatus();
-
+        sepc = sepc+4;
         switch(fcode){
             case 0x01:{
                 void* ret;
@@ -47,14 +50,6 @@ void Riscv::interruptRoutineHandler(){
                 asm volatile("mv a0, %0" : : "r" (retval));
 
                 break;
-            }
-            case 0x03:{
-
-                mc_sstatus(SSTATUS_SPP);  // postavlja 8. bit na 0 i pali korisnicki rezim
-                w_sepc(sepc);   //na tu adresu se vraca
-
-                return;
-
             }
             case 0x11: {
 
@@ -129,8 +124,10 @@ void Riscv::interruptRoutineHandler(){
 
         }
 
-        w_sepc(sepc); //ako je unutar dispacha promenjen pc ovde upisujem taj novi(sto je nekad sacuvan od neke druge niti)
-        w_sstatus(sstatus);
+            w_sepc(sepc); //ako je unutar dispacha promenjen pc ovde upisujem taj novi(sto je nekad sacuvan od neke druge niti)
+            w_sstatus(sstatus);
+
+
     }
     else if (scause == 0x8000000000000001UL){
         mc_sip(SIP_SSIP);

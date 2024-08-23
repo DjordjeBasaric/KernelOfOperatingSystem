@@ -4,6 +4,7 @@
 
 #include "../h/_thread.hpp"
 #include "../h/riscv.hpp"
+#include "../h/syscall_c.hpp"
 
 _thread* _thread::running = nullptr;
 
@@ -21,13 +22,13 @@ void _thread::thread_dispatch(){
     running = Scheduler::get();
 
     //trenutni ra cuvam u old->context, a novi ra uzimam iz running->context i stavljam u ra registar
-    _thread::contextSwitch(&old->context, &running->context);
+    if(old != running){
+        _thread::contextSwitch(&old->context, &running->context);
+    }
 }
 
 int _thread::thread_exit() {
     _thread::running->setFinished(true);
-    if(running->isFinished()) return -1;
-    //delete _thread::running;
     _thread::thread_dispatch();
     return 1;
 }
@@ -35,7 +36,8 @@ int _thread::thread_exit() {
 void _thread::threadWrapper() {
     Riscv::popSppSpie();
     running->body(running->arg);
-    running->setFinished(true);//kada se sve zavrsi postavi da je kraj
-    _thread::thread_dispatch();
+   // running->setFinished(true);//kada se sve zavrsi postavi da je kraj
+    ::thread_exit();
+    //_thread::thread_dispatch();
 }
 

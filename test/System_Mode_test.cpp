@@ -34,7 +34,6 @@ static void workerBodyB(void* arg) {
             thread_dispatch();
         }
         if (i == 10) {
-          //  changeMode();
             asm volatile("csrr t6, sepc");
         }
     }

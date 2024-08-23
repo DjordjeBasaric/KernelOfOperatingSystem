@@ -121,18 +121,6 @@ void userMain() {
 
 
 
-
-void wrapper(void* arg){
-
-    while(!nitA->isFinished() || !nitB->isFinished() || !nitC->isFinished()){
-        thread_dispatch();
-    }
-
-    printString("ZAVRSENA JE WRAPPER FJA\n");
-    _thread::running->setFinished(true);
-    thread_dispatch();
-}
-
 int main()
 {
     MemoryAllocator::init_mem();
@@ -148,9 +136,10 @@ int main()
 
     thread_t thread2;
 
-    //changeMode();
 
     thread_create(&thread2, reinterpret_cast<void (*)(void *)>(userMain), nullptr);
+
+    thread_dispatch();
 
     while (!(thread2->isFinished())) {
         thread_dispatch();

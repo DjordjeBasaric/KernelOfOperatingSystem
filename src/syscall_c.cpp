@@ -123,8 +123,4 @@ int sem_trywait(sem_t handle){
     return retval;
 }
 
-void changeMode(){
-    uint64 fcode = 0x3;
-    asm volatile("mv a0, %0" : : "r" (fcode));
-    asm volatile("ecall");
-}
+
