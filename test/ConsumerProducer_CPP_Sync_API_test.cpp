@@ -103,8 +103,7 @@ void ConsumerSync::consumer(void *arg) {
 
     while (td->buffer->getCnt() > 0) {
         int key = td->buffer->get();
-        //Console::putc(key);
-        putc(key);
+        Console::putc(key);
     }
 
     data->wait->signal();

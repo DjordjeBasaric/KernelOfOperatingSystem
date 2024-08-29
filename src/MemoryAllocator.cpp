@@ -1,7 +1,3 @@
-//
-// Created by basara on 9.8.24..
-//
-
 #include "../h/MemoryAllocator.h"
 
 Mem_Block* MemoryAllocator::free_Block = nullptr;

@@ -1,7 +1,3 @@
-//
-// Created by basara on 7.8.24..
-//
-
 #ifndef OS1_PROJEKAT__SEMQ_H
 #define OS1_PROJEKAT__SEMQ_H
 

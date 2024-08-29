@@ -1,7 +1,3 @@
-//
-// Created by marko on 20.4.22..
-//
-
 #ifndef OS_PROJEKAT_RISCV_HPP
 #define OS_PROJEKAT_RISCV_HPP
 

@@ -1,7 +1,7 @@
 #include "buffer_CPP_API.hpp"
 
 BufferCPP::BufferCPP(int _cap) : cap(_cap + 1), head(0), tail(0) {
-    buffer = (int *)MemoryAllocator::mem_alloc(sizeof(int) * cap);
+    buffer = (int *)mem_alloc(sizeof(int) * cap);
     itemAvailable = new Semaphore(0);
     spaceAvailable = new Semaphore(_cap);
     mutexHead = new Semaphore(1);
@@ -9,21 +9,17 @@ BufferCPP::BufferCPP(int _cap) : cap(_cap + 1), head(0), tail(0) {
 }
 
 BufferCPP::~BufferCPP() {
-    //Console::putc('\n');
-    putc('\n');
+    Console::putc('\n');
     printString("Buffer deleted!\n");
     while (getCnt()) {
         char ch = buffer[head];
-        //Console::putc(ch);
-        putc(ch);
+        Console::putc(ch);
         head = (head + 1) % cap;
     }
-    //Console::putc('!');
-    putc('!');
-    //Console::putc('\n');
-    putc('\n');
+    Console::putc('!');
+    Console::putc('\n');
 
-    MemoryAllocator::mem_free(buffer);
+    mem_free(buffer);
     delete itemAvailable;
     delete spaceAvailable;
     delete mutexTail;

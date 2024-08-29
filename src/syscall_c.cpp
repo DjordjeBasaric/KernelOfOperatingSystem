@@ -1,8 +1,3 @@
-//
-// Created by basara on 20.6.24..
-//
-
-
 #include "../lib/hw.h"
 #include "../lib/console.h"
 #include "../h/syscall_c.hpp"
@@ -19,10 +14,10 @@ void* mem_alloc(size_t size){
     return retval;
 }
 
-int mem_free(size_t size){
+int mem_free(void *p){
     uint64 const fcode = 0x02;
     int retval;
-    __asm__ volatile("mv a1, %0" : : "r"(size));
+    __asm__ volatile("mv a1, %0" : : "r"(p));
     __asm__ volatile("mv a0, %0" : : "r"(fcode));
     __asm__ volatile("ecall");
     asm volatile("mv %0, a0" : "=r" (retval));
@@ -39,9 +34,9 @@ int thread_create(thread_t* handle, void(*start_routine)(void*), void* arg){
     __asm__ volatile("mv a0, %0" : : "r"(fcode));
     __asm__ volatile("ecall");
     asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+
     return retval;//PROVERITI DA LI JE UREDU
 
-    //dodati promenljivu za povratnu vrednost
 }
 
 void thread_dispatch(){
@@ -58,6 +53,7 @@ int thread_exit(){
     asm volatile("mv %0, a0" : "=r" (retval));
     return retval;
 }
+
 
 char getc(){
     uint64 const fcode = 0x41;
@@ -124,3 +120,22 @@ int sem_trywait(sem_t handle){
 }
 
 
+int getId(){
+
+    uint64 const fcode = 0x50;
+    int id;
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (id));
+    thread_dispatch();
+    return id;
+}
+
+void thread_join(thread_t* handle){
+    uint64 const fcode = 0x51;
+    int retval;
+    __asm__ volatile("mv a1, %0" : : "r"(handle));
+    __asm__ volatile("mv a0, %0" : : "r"(fcode));
+    __asm__ volatile("ecall");
+    asm volatile("mv %0, a0" : "=r" (retval)); // c <- a0
+}

@@ -54,6 +54,8 @@ public:
 };
 
 void WorkerA::workerBodyA(void *arg) {
+    //printString("Ovo je nit broj = ");
+    //printInt(getId());
     for (uint64 i = 0; i < 10; i++) {
         printString("A: i="); printInt(i); printString("\n");
         for (uint64 j = 0; j < 10000; j++) {
@@ -66,6 +68,8 @@ void WorkerA::workerBodyA(void *arg) {
 }
 
 void WorkerB::workerBodyB(void *arg) {
+   // printString("Ovo je nit broj = ");
+   // printInt(getId());
     for (uint64 i = 0; i < 16; i++) {
         printString("B: i="); printInt(i); printString("\n");
         for (uint64 j = 0; j < 10000; j++) {
@@ -79,6 +83,8 @@ void WorkerB::workerBodyB(void *arg) {
 }
 
 void WorkerC::workerBodyC(void *arg) {
+    //printString("Ovo je nit broj = ");
+    //printInt(getId());
     uint8 i = 0;
     for (; i < 3; i++) {
         printString("C: i="); printInt(i); printString("\n");
@@ -100,12 +106,15 @@ void WorkerC::workerBodyC(void *arg) {
         printString("C: i="); printInt(i); printString("\n");
     }
 
-    printString("C finished!\n");
+    printString("A finished!\n");
     finishedC = true;
     thread_dispatch();
 }
 
 void WorkerD::workerBodyD(void* arg) {
+    //printString("Ovo je nit broj = ");
+    //printInt(getId());
+
     uint8 i = 10;
     for (; i < 13; i++) {
         printString("D: i="); printInt(i); printString("\n");
@@ -143,13 +152,17 @@ void Threads_CPP_API_test() {
     threads[3] = new WorkerD();
     printString("ThreadD created\n");
 
+
     for(int i=0; i<4; i++) {
+
+
         threads[i]->start();
+
     }
 
     while (!(finishedA && finishedB && finishedC && finishedD)) {
         Thread::dispatch();
     }
 
-    for (auto thread: threads) {  printString("Obrisao\n"); delete thread; }
+    for (auto thread: threads) { delete thread; }
 }

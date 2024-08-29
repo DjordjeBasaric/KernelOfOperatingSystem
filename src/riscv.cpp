@@ -1,7 +1,3 @@
-//
-// Created by marko on 20.4.22..
-//
-
 #include "../h/riscv.hpp"
 #include "../lib/console.h"
 #include "../h/_thread.hpp"
@@ -114,11 +110,26 @@ void Riscv::interruptRoutineHandler(){
 
                 break;
             }
-            case 0x41:{
+            case 0x41: {
                 char ch = __getc();
                 asm volatile("mv a0, %0" : : "r" (ch));
                 break;
             }
+
+            case 0x50:{
+                int idT = _thread::running->getThreadId();
+                asm volatile("mv a0, %0" : : "r" (idT));
+              //  _thread::thread_dispatch();
+                break;
+            }
+            case 0x51:{
+                uint64 handle;
+                asm volatile("mv %0, a1" : "=r" (handle));
+                _thread::join_thread((thread_t*)handle);
+                break;
+            }
+
+
             default:
                 break;
 

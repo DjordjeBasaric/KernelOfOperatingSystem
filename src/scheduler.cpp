@@ -1,7 +1,3 @@
-//
-// Created by marko on 20.4.22..
-//
-
 #include "../h/scheduler.hpp"
 
 List<_thread> Scheduler::readyCoroutineQueue;

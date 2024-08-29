@@ -1,7 +1,3 @@
-//
-// Created by basara on 7.8.24..
-//
-
 #include "../h/_sem.hpp"
 
 
@@ -50,10 +46,9 @@ int _sem::sem_wait(sem_t id) {
 }
 
 int _sem::sem_trywait(sem_t id) {
-    if(id==nullptr) return -1;
+    //if(id==nullptr) return -1;
     if (id->val>0) {
-        id->val--;
-        if (id->val > 0) return 0;
+        return 1;
     }
-    return 1;
+    else return 0;
 }
